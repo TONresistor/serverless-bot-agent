@@ -1,0 +1,239 @@
+{
+  "items": [
+    {
+      "asset": "jetton:0:e953a7493d60349b8cd83cb1b0b3e16adf3c98c8d33c9c7cd7f9816b6b951fb8",
+      "ath_date": "2025-09-27T10:50:46.295349Z",
+      "ath_market_cap_usd": "1599.25233104573235439286018",
+      "ath_usd": "0.00000159925233104573235439286018",
+      "atl_date": "2025-10-21T09:45:44.557786Z",
+      "atl_market_cap_usd": "1020.79459106021438121612",
+      "atl_usd": "0.00000102079459106021438121612",
+      "buy_tax": 0,
+      "circulating_supply": "1000000000000000000",
+      "created_at": "2025-09-27T10:33:45Z",
+      "fully_diluted_market_cap": "1020.79459106021438121612",
+      "holders": 0,
+      "liquidity": "0.000000002196891294238851",
+      "market_cap": "1020.79459106021438121612",
+      "metadata": {
+        "decimals": 9,
+        "description": "Tokenized real estate fund. ",
+        "image_url": "https://cdn.dedust.io/images/jetton:0:e953a7493d60349b8cd83cb1b0b3e16adf3c98c8d33c9c7cd7f9816b6b951fb8.webp?v=1758969242",
+        "name": "Big Daddy InfestFund",
+        "ticker": "BDIFUND",
+        "usd_price": "0.00000102"
+      },
+      "price": {
+        "ton_change": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        },
+        "ton_value": "0.00000046465412",
+        "usd_change": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        },
+        "usd_value": "0.00000102079459106021438121612"
+      },
+      "sell_tax": 0,
+      "tags": [
+        "blum"
+      ],
+      "total_supply": "1000000000000000000",
+      "traders": {
+        "buy": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        },
+        "sell": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        },
+        "total": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        }
+      },
+      "transactions": {
+        "buy": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        },
+        "sell": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        }
+      },
+      "verification_level": 3,
+      "volume": {
+        "buy_periods": {
+          "d7": "0",
+          "h1": "0",
+          "h24": "0",
+          "h6": "0",
+          "m15": "0"
+        },
+        "change": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        },
+        "periods": {
+          "d7": "0",
+          "h1": "0",
+          "h24": "0",
+          "h6": "0",
+          "m15": "0"
+        },
+        "sell_periods": {
+          "d7": "0",
+          "h1": "0",
+          "h24": "0",
+          "h6": "0",
+          "m15": "0"
+        }
+      }
+    },
+    {
+      "asset": "jetton:0:8e00d569e121e2575417cab4c98dca29e0d08b5ebd1cd6d3635f83bbc7e798d6",
+      "ath_date": "2025-04-02T18:03:01Z",
+      "ath_market_cap_usd": "2997.44865682499184206242038",
+      "ath_usd": "0.00000299744865682499184206242038",
+      "atl_date": "2025-06-05T14:20:24Z",
+      "atl_market_cap_usd": "1486.28168687045886956508222",
+      "atl_usd": "0.00000148628168687045886956508222",
+      "buy_tax": 0,
+      "circulating_supply": "1000000000000000000",
+      "created_at": "2025-04-02T17:50:09Z",
+      "fully_diluted_market_cap": "1486.28168687045886956508222",
+      "holders": 0,
+      "liquidity": "0",
+      "market_cap": "1486.28168687045886956508222",
+      "metadata": {
+        "decimals": 9,
+        "description": "TrumpShop pay with Trump1st",
+        "image_url": "https://cdn.dedust.io/images/jetton:0:8e00d569e121e2575417cab4c98dca29e0d08b5ebd1cd6d3635f83bbc7e798d6.webp?v=1752042229",
+        "name": "Trump Shop",
+        "ticker": "TRUMP1ST",
+        "usd_price": "0.000001486"
+      },
+      "price": {
+        "ton_change": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        },
+        "ton_value": "0.0000004650813219",
+        "usd_change": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        },
+        "usd_value": "0.00000148628168687045886956508222"
+      },
+      "sell_tax": 0,
+      "tags": [
+        "tonfun"
+      ],
+      "total_supply": "1000000000000000000",
+      "traders": {
+        "buy": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        },
+        "sell": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        },
+        "total": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        }
+      },
+      "transactions": {
+        "buy": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        },
+        "sell": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        }
+      },
+      "verification_level": 3,
+      "volume": {
+        "buy_periods": {
+          "d7": "0",
+          "h1": "0",
+          "h24": "0",
+          "h6": "0",
+          "m15": "0"
+        },
+        "change": {
+          "d7": 0,
+          "h1": 0,
+          "h24": 0,
+          "h6": 0,
+          "m15": 0
+        },
+        "periods": {
+          "d7": "0",
+          "h1": "0",
+          "h24": "0",
+          "h6": "0",
+          "m15": "0"
+        },
+        "sell_periods": {
+          "d7": "0",
+          "h1": "0",
+          "h24": "0",
+          "h6": "0",
+          "m15": "0"
+        }
+      }
+    }
+  ],
+  "total_count": 180634
+}

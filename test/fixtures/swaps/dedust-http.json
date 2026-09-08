@@ -1,0 +1,2141 @@
+{
+  "source": "Public TON Center v2/v3 and DeDust v4 read responses; no headers, credentials or private wallet state.",
+  "captured_at": "2026-09-07T16:39:01.947Z",
+  "owner": "0:0101010101010101010101010101010101010101010101010101010101010101",
+  "cases": [
+    {
+      "name": "vault",
+      "token": "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
+      "decimals": 6,
+      "plan": {
+        "summary": "Swap 0.01 TON for at least 0.013822 0:b113a994b5024a16719f69139328eb759596c38a25f59028b146fecdc3621dfe via DeDust vault volatile direct. Pool: 0:3e5ffca8ddfcf36c36c9ff46f31562aab51b9914845ad6c26cbde649d58a5588. Slippage: 100 bps. TON gas budget: 0.25.",
+        "message": {
+          "destination": "0:dae153a74d894bbc32748198cd626e4f5df4a69ad2fa56ce80fc2644b5708d20",
+          "amountNano": "260000000",
+          "bodyBoc": "te6cckEBBAEAfQABZ+oGGF2oZbRmIeImaDmJaAgAfL/5Ubv55thtk/6N5irFVWo3MikIta2E2XvMk6sUqxAjX+QBAktrSdWEgAAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJwIDABhERE9LqGW0ZiHiJmgAGERETk+oZbRmIeImaMoB2eA=",
+          "bounce": true
+        },
+        "receipt": {
+          "kind": "swap",
+          "protocol": "dedust",
+          "network": "mainnet",
+          "owner": "0:0101010101010101010101010101010101010101010101010101010101010101",
+          "args": {
+            "dex": "dedust",
+            "from": "TON",
+            "to": "0:b113a994b5024a16719f69139328eb759596c38a25f59028b146fecdc3621dfe",
+            "amount": "0.01",
+            "from_decimals": 9,
+            "to_decimals": 6,
+            "max_slippage_bps": 100,
+            "pool_address": "0:3e5ffca8ddfcf36c36c9ff46f31562aab51b9914845ad6c26cbde649d58a5588"
+          },
+          "source": "TON",
+          "output": "0:b113a994b5024a16719f69139328eb759596c38a25f59028b146fecdc3621dfe",
+          "sourceDecimals": 9,
+          "outputDecimals": 6,
+          "inputUnits": "10000000",
+          "version": "vault-v2",
+          "poolType": 0,
+          "poolAddress": "0:3e5ffca8ddfcf36c36c9ff46f31562aab51b9914845ad6c26cbde649d58a5588",
+          "codeHash": "1275095b6da3911292406f4f4386f9e780099b854c6dee9ee2895ddce70927c1",
+          "configHash": "",
+          "expectedOut": "13962",
+          "feeAmount": "10000",
+          "feeAsset": "TON",
+          "inputVault": "0:dae153a74d894bbc32748198cd626e4f5df4a69ad2fa56ce80fc2644b5708d20",
+          "outputVault": "0:18aa8e2eed51747dae033c079b93883d941cad8f65459f2ee9cd7474b6b8ed5d",
+          "inputPoolWallet": "0:dae153a74d894bbc32748198cd626e4f5df4a69ad2fa56ce80fc2644b5708d20",
+          "outputPoolWallet": "0:88dac67cceadb9cae6faac7118f05c0fa95df36c2a92e686ac39d96310d0a387",
+          "feeBps": null,
+          "feeIn": "input",
+          "xToY": true,
+          "minOut": "13822",
+          "inputWallet": "0:0101010101010101010101010101010101010101010101010101010101010101",
+          "outputWallet": "0:f50d794118e197112cc7e99e0b157ca5c525fea600afaec6dab6950b87aedfba",
+          "queryId": "12134303121767802472",
+          "deadline": 1800000900,
+          "gasNano": "250000000"
+        },
+        "details": {
+          "dex": "dedust",
+          "from": "TON",
+          "to": "0:b113a994b5024a16719f69139328eb759596c38a25f59028b146fecdc3621dfe",
+          "amount_in": "0.01",
+          "expected_out": "0.013962",
+          "minimum_out": "0.013822",
+          "route": "DeDust vault volatile direct",
+          "pool_address": "0:3e5ffca8ddfcf36c36c9ff46f31562aab51b9914845ad6c26cbde649d58a5588",
+          "fee_amount_raw": "10000",
+          "fee_asset": "TON",
+          "gas_budget_ton": "0.25",
+          "slippage_bps": 100,
+          "note": "Indicative direct pool quote. ton_swap rechecks the selected pool and prepares an exact transaction for owner confirmation. Minimum output and deadline are enforced on-chain."
+        }
+      }
+    },
+    {
+      "name": "cpmm1",
+      "token": "0:0efed6292db3eaf863977a061362d15a434b4c9312c1c73605f1c5021865808f",
+      "decimals": 9,
+      "plan": {
+        "summary": "Swap 0.01 TON for at least 127.50827056 0:0efed6292db3eaf863977a061362d15a434b4c9312c1c73605f1c5021865808f via DeDust CPMM v2 direct. Pool: 0:8f5dfa5cfd6660db32e870b20dd3e63226e4b07ba57c18fb0f704957db78f508. Slippage: 100 bps. TON gas budget: 0.25.",
+        "message": {
+          "destination": "0:8f5dfa5cfd6660db32e870b20dd3e63226e4b07ba57c18fb0f704957db78f508",
+          "amountNano": "260000000",
+          "bodyBoc": "te6cckEBBQEAqwACH6Wny/gna3qUaCOc3DmJaAgBAgAdxEJQD1HbAVzeAAa0nVhBAsuAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAhwAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEOAACAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAwDBAAYRERPSydrepRoI5zcABhERE5PJ2t6lGgjnNy0YSjf",
+          "bounce": true
+        },
+        "receipt": {
+          "kind": "swap",
+          "protocol": "dedust",
+          "network": "mainnet",
+          "owner": "0:0101010101010101010101010101010101010101010101010101010101010101",
+          "args": {
+            "dex": "dedust",
+            "from": "TON",
+            "to": "0:0efed6292db3eaf863977a061362d15a434b4c9312c1c73605f1c5021865808f",
+            "amount": "0.01",
+            "from_decimals": 9,
+            "to_decimals": 9,
+            "max_slippage_bps": 100,
+            "pool_address": "0:8f5dfa5cfd6660db32e870b20dd3e63226e4b07ba57c18fb0f704957db78f508"
+          },
+          "source": "TON",
+          "output": "0:0efed6292db3eaf863977a061362d15a434b4c9312c1c73605f1c5021865808f",
+          "sourceDecimals": 9,
+          "outputDecimals": 9,
+          "inputUnits": "10000000",
+          "version": "cpmm-v2",
+          "poolType": null,
+          "poolAddress": "0:8f5dfa5cfd6660db32e870b20dd3e63226e4b07ba57c18fb0f704957db78f508",
+          "codeHash": "3997a5c1ee8923e93cf3a6a98ea3ef9482c64dd8aea2ba8365689e14d99c760d",
+          "configHash": "c6cf0571121109950eb9780a98d566f640deff65d90dac49f748fbbb2296ccf3",
+          "expectedOut": "128796232889",
+          "feeAmount": "291263",
+          "feeAsset": "TON",
+          "inputVault": "0:8f5dfa5cfd6660db32e870b20dd3e63226e4b07ba57c18fb0f704957db78f508",
+          "outputVault": "0:8f5dfa5cfd6660db32e870b20dd3e63226e4b07ba57c18fb0f704957db78f508",
+          "inputPoolWallet": "0:8f5dfa5cfd6660db32e870b20dd3e63226e4b07ba57c18fb0f704957db78f508",
+          "outputPoolWallet": "0:8f201472b62b4a94d0c8b7b818125e45cbee8ed2a963599690ea54e62e534de5",
+          "feeBps": 300,
+          "feeIn": "assetX",
+          "xToY": true,
+          "minOut": "127508270560",
+          "inputWallet": "0:0101010101010101010101010101010101010101010101010101010101010101",
+          "outputWallet": "0:0154826e0a1dde4f84ecdb16903c1b69f6bcce53f50c9f026e52c13dae3ea395",
+          "queryId": "2840498767808142556",
+          "deadline": 1800000900,
+          "gasNano": "250000000"
+        },
+        "details": {
+          "dex": "dedust",
+          "from": "TON",
+          "to": "0:0efed6292db3eaf863977a061362d15a434b4c9312c1c73605f1c5021865808f",
+          "amount_in": "0.01",
+          "expected_out": "128.796232889",
+          "minimum_out": "127.50827056",
+          "route": "DeDust CPMM v2 direct",
+          "pool_address": "0:8f5dfa5cfd6660db32e870b20dd3e63226e4b07ba57c18fb0f704957db78f508",
+          "fee_amount_raw": "291263",
+          "fee_asset": "TON",
+          "gas_budget_ton": "0.25",
+          "slippage_bps": 100,
+          "note": "Indicative direct pool quote. ton_swap rechecks the selected pool and prepares an exact transaction for owner confirmation. Minimum output and deadline are enforced on-chain."
+        }
+      }
+    },
+    {
+      "name": "cpmm2",
+      "token": "0:3a39b4a8f53b7213c814dc503fbb7a200162c1b32d088e838db422a66c08c1aa",
+      "decimals": 9,
+      "pool": "EQD026kOv4j6-56O6y8kbaaFZdQhVkh4RbEGrQND7XJMlgLf",
+      "plan": {
+        "summary": "Swap 0.01 TON for at least 8010.507004921 0:3a39b4a8f53b7213c814dc503fbb7a200162c1b32d088e838db422a66c08c1aa via DeDust CPMM v2 direct. Pool: 0:f4dba90ebf88fafb9e8eeb2f246da68565d42156487845b106ad0343ed724c96. Slippage: 100 bps. TON gas budget: 0.25.",
+        "message": {
+          "destination": "0:f4dba90ebf88fafb9e8eeb2f246da68565d42156487845b106ad0343ed724c96",
+          "amountNano": "260000000",
+          "bodyBoc": "te6cckEBBQEArAACH6Wny/hYS03oPaQwljmJaAgBAgAfxEJQD2B0kXbKv5AGtJ1YQQLLgAAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIcAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBDgAAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgMAwQAGERET0tYS03oPaQwlgAYREROT1hLTeg9pDCWCJ4jeQ==",
+          "bounce": true
+        },
+        "receipt": {
+          "kind": "swap",
+          "protocol": "dedust",
+          "network": "mainnet",
+          "owner": "0:0101010101010101010101010101010101010101010101010101010101010101",
+          "args": {
+            "dex": "dedust",
+            "pool_address": "0:f4dba90ebf88fafb9e8eeb2f246da68565d42156487845b106ad0343ed724c96",
+            "from": "TON",
+            "to": "0:3a39b4a8f53b7213c814dc503fbb7a200162c1b32d088e838db422a66c08c1aa",
+            "amount": "0.01",
+            "from_decimals": 9,
+            "to_decimals": 9,
+            "max_slippage_bps": 100
+          },
+          "source": "TON",
+          "output": "0:3a39b4a8f53b7213c814dc503fbb7a200162c1b32d088e838db422a66c08c1aa",
+          "sourceDecimals": 9,
+          "outputDecimals": 9,
+          "inputUnits": "10000000",
+          "version": "cpmm-v2",
+          "poolType": null,
+          "poolAddress": "0:f4dba90ebf88fafb9e8eeb2f246da68565d42156487845b106ad0343ed724c96",
+          "codeHash": "5851780d2386e989b9ab956da7cec5c69a667b9e525f628dcba5eb02c1ee0367",
+          "configHash": "9bfaac37ea92adde187d20aa604886c5ac571ba37c281cca79f79087ecbfaccc",
+          "expectedOut": "8091421217092",
+          "feeAmount": "99010",
+          "feeAsset": "TON",
+          "inputVault": "0:f4dba90ebf88fafb9e8eeb2f246da68565d42156487845b106ad0343ed724c96",
+          "outputVault": "0:f4dba90ebf88fafb9e8eeb2f246da68565d42156487845b106ad0343ed724c96",
+          "inputPoolWallet": "0:f4dba90ebf88fafb9e8eeb2f246da68565d42156487845b106ad0343ed724c96",
+          "outputPoolWallet": "0:f4b840dfc37fdfb4ae42cb01c2e55815268a0d44e6f42866a62f6c7c02058d4a",
+          "feeBps": 100,
+          "feeIn": "assetX",
+          "xToY": true,
+          "minOut": "8010507004921",
+          "inputWallet": "0:0101010101010101010101010101010101010101010101010101010101010101",
+          "outputWallet": "0:011756583fc737beef5cb2fedcf7a2c68cd237672e34e43f8cfbaa6329eac85e",
+          "queryId": "6362264558452879510",
+          "deadline": 1800000900,
+          "gasNano": "250000000"
+        },
+        "details": {
+          "dex": "dedust",
+          "from": "TON",
+          "to": "0:3a39b4a8f53b7213c814dc503fbb7a200162c1b32d088e838db422a66c08c1aa",
+          "amount_in": "0.01",
+          "expected_out": "8091.421217092",
+          "minimum_out": "8010.507004921",
+          "route": "DeDust CPMM v2 direct",
+          "pool_address": "0:f4dba90ebf88fafb9e8eeb2f246da68565d42156487845b106ad0343ed724c96",
+          "fee_amount_raw": "99010",
+          "fee_asset": "TON",
+          "gas_budget_ton": "0.25",
+          "slippage_bps": 100,
+          "note": "Indicative direct pool quote. ton_swap rechecks the selected pool and prepares an exact transaction for owner confirmation. Minimum output and deadline are enforced on-chain."
+        }
+      }
+    }
+  ],
+  "records": {
+    "[\"https://mainnet.api.dedust.io/v4/api/coins?query=jetton%3A0%3Ab113a994b5024a16719f69139328eb759596c38a25f59028b146fecdc3621dfe&limit=10\",\"GET\",\"\"]": {
+      "items": [
+        {
+          "asset": "jetton:0:b113a994b5024a16719f69139328eb759596c38a25f59028b146fecdc3621dfe",
+          "ath_date": "2026-02-16T17:10:21.720642Z",
+          "ath_market_cap_usd": "1676316159.531532931167903026",
+          "ath_usd": "1.1722687349921526",
+          "atl_date": "2024-04-19T12:35:00Z",
+          "atl_market_cap_usd": "7655986.05332739827584549405",
+          "atl_usd": "0.005353926247635655",
+          "buy_tax": 0,
+          "circulating_supply": "1429976002510000",
+          "created_at": "2024-04-12T14:34:06Z",
+          "fully_diluted_market_cap": "1422749308.877698218913372217",
+          "holders": 3120724,
+          "liquidity": "12466567.1097781517125753504925782",
+          "market_cap": "1422749308.877698218913372217",
+          "metadata": {
+            "decimals": 6,
+            "description": "Tether Token for Tether USD",
+            "image_url": "https://cdn.dedust.io/images/jetton:0:b113a994b5024a16719f69139328eb759596c38a25f59028b146fecdc3621dfe.webp?v=1752055235",
+            "name": "Tether USD",
+            "ticker": "USDT",
+            "usd_price": "0.994946283"
+          },
+          "price": {
+            "ton_change": {
+              "d7": 2.99832875458244,
+              "h1": 0.29759216906785,
+              "h24": 1.45957617350704,
+              "h6": 1.43040245782897,
+              "m15": -0.14354627614648
+            },
+            "ton_value": "0.7123092334426258",
+            "usd_change": {
+              "d7": -0.07797993269994,
+              "h1": -0.04906418316294,
+              "h24": -0.10338376989218,
+              "h6": -0.09923494501689,
+              "m15": 0.00785697562893
+            },
+            "usd_value": "0.9949462832805467"
+          },
+          "sell_tax": 0,
+          "tags": [],
+          "total_supply": "1429976002510000",
+          "traders": {
+            "buy": {
+              "d7": 19082,
+              "h1": 252,
+              "h24": 3823,
+              "h6": 1176,
+              "m15": 59
+            },
+            "sell": {
+              "d7": 14291,
+              "h1": 211,
+              "h24": 2568,
+              "h6": 940,
+              "m15": 56
+            },
+            "total": {
+              "d7": 28184,
+              "h1": 413,
+              "h24": 5665,
+              "h6": 1908,
+              "m15": 109
+            }
+          },
+          "transactions": {
+            "buy": {
+              "d7": 75354,
+              "h1": 391,
+              "h24": 9079,
+              "h6": 2207,
+              "m15": 69
+            },
+            "sell": {
+              "d7": 52574,
+              "h1": 356,
+              "h24": 5777,
+              "h6": 1747,
+              "m15": 66
+            }
+          },
+          "verification_level": 4,
+          "volume": {
+            "buy_periods": {
+              "d7": "7641441.8220457041780830586161",
+              "h1": "52470.4844668400629850015367",
+              "h24": "759639.2384410604673043795048",
+              "h6": "232802.8758512358273008705812",
+              "m15": "7336.810927239735534118773"
+            },
+            "change": {
+              "d7": -5.81229112624732,
+              "h1": 40.88061759892241,
+              "h24": -1.98521058951763,
+              "h6": 2.89209348755859,
+              "m15": 60.69236418839453
+            },
+            "periods": {
+              "d7": "15165593.7963488026028987102455",
+              "h1": "90834.3316543405187391605458",
+              "h24": "1460737.9635315532992742121912",
+              "h6": "413588.5768370829168695147258",
+              "m15": "19137.8632877027271549482419"
+            },
+            "sell_periods": {
+              "d7": "7524151.9743030984248156516294",
+              "h1": "38363.8471875004557541590091",
+              "h24": "701098.7250904928319698326864",
+              "h6": "180785.7009858470895686441446",
+              "m15": "11801.0523604629916208294689"
+            }
+          }
+        }
+      ],
+      "total_count": 1
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"getAddressInformation\\\",\\\"params\\\":{\\\"address\\\":\\\"0:5f0564fb5f604783db57031ce1cf668a88d4d4d6da6de4db222b4b920d6fd800\\\"}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "raw.fullAccountState",
+        "balance": "308660445054",
+        "extra_currencies": [],
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101940689000012",
+          "hash": "wPbSIJ1a+hsIGem9z9qwwAxjt0XfAF1bqDS2UpRGOx0="
+        },
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215877,
+          "root_hash": "XTJ9SCqsL0VYDz/X9ErSKAp2ApKRxZErqfQgmkzJzKk=",
+          "file_hash": "FPERfTfaDYw6siDjXyaI+plonjtx33NgwZdXXiGWNcI="
+        },
+        "code": "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",
+        "data": "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",
+        "frozen_hash": "",
+        "sync_utime": 1788799135,
+        "state": "active",
+        "suspended": false
+      },
+      "@extra": "1788799136:9:11.024"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:5f0564fb5f604783db57031ce1cf668a88d4d4d6da6de4db222b4b920d6fd800\\\",\\\"method\\\":\\\"get_pool_address\\\",\\\"stack\\\":[[\\\"num\\\",\\\"0\\\"],[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAAwAAAQiFl+L/\\\"],[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQxALETqZS1AkoWcZ9pE5Mo63WVlsOKJfWQKLFG/s3DYh3+iNJO1L\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 5091,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AHy/+VG7+ebYbZP+jeYqxVVqNzIpCLWthNl7zJOrFKsRAS4Smq",
+              "object": {
+                "data": {
+                  "b64": "gAfL/5Ubv55thtk/6N5irFVWo3MikIta2E2XvMk6sUqxEA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215877,
+          "root_hash": "XTJ9SCqsL0VYDz/X9ErSKAp2ApKRxZErqfQgmkzJzKk=",
+          "file_hash": "FPERfTfaDYw6siDjXyaI+plonjtx33NgwZdXXiGWNcI="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101940689000012",
+          "hash": "wPbSIJ1a+hsIGem9z9qwwAxjt0XfAF1bqDS2UpRGOx0="
+        }
+      },
+      "@extra": "1788799136:7:23.321"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:5f0564fb5f604783db57031ce1cf668a88d4d4d6da6de4db222b4b920d6fd800\\\",\\\"method\\\":\\\"get_pool_address\\\",\\\"stack\\\":[[\\\"num\\\",\\\"1\\\"],[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAAwAAAQiFl+L/\\\"],[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQxALETqZS1AkoWcZ9pE5Mo63WVlsOKJfWQKLFG/s3DYh3+iNJO1L\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 5091,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4Ae7aCWUePUcLHNTuFLc/GpQypBWGiaDAQ/s1J2qHwNwZASYypX",
+              "object": {
+                "data": {
+                  "b64": "gB7toJZR49Rwsc1O4Utz8alDKkFYaJoMBD+zUnaofA3BkA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215878,
+          "root_hash": "xABKvuaKLGGskiDVCf5UsjNHgSWC2jj0l4FEEzz/ons=",
+          "file_hash": "mDVGRtZ0JQ/zVxUmDrIBjUsJ9X1gdGQTVhdFWIGvG/U="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101940689000012",
+          "hash": "wPbSIJ1a+hsIGem9z9qwwAxjt0XfAF1bqDS2UpRGOx0="
+        }
+      },
+      "@extra": "1788799136:1:24.713"
+    },
+    "[\"https://toncenter.com/api/v3/messages?source=0%3Ab113a994b5024a16719f69139328eb759596c38a25f59028b146fecdc3621dfe&direction=out&opcode=0xde8402ce&limit=4\",\"GET\",\"\"]": {
+      "messages": [],
+      "address_book": {},
+      "metadata": {}
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"getAddressInformation\\\",\\\"params\\\":{\\\"address\\\":\\\"0:3e5ffca8ddfcf36c36c9ff46f31562aab51b9914845ad6c26cbde649d58a5588\\\"}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "raw.fullAccountState",
+        "balance": "99855000",
+        "extra_currencies": [],
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951821000024",
+          "hash": "remrs0W7l0WStHB3kuDWFdwOHNOwx/1YALbVse+ixjg="
+        },
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215878,
+          "root_hash": "xABKvuaKLGGskiDVCf5UsjNHgSWC2jj0l4FEEzz/ons=",
+          "file_hash": "mDVGRtZ0JQ/zVxUmDrIBjUsJ9X1gdGQTVhdFWIGvG/U="
+        },
+        "code": "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",
+        "data": "te6cckECGQEABMEABIEABwAKYGJg9/QAtrjtvFrxB1Qio+sq5REHN3tmQGKNwsAMCXznvJBxWzS58QAAAAAADAl857yQcVs0ufEAAAAACAECAwQAiYAL4Kyfa+wI8Htq4GOcOezRURqamttNvJtkRWlyQa37AABAEAsROplLUCShZxn2kTkyjrdZWWw4ol9ZAosUb+zcNiHf6AEU/wD0pBP0vPLICwUBFP8A9KQT9LzyyAsIAM0AAIAbXCp06bEpd4ZOkDMZrE3J676U01pfStnQH4TIlq4RpBAAYqo4u7VF0fa4DPAebk4g9lBytj2VFny7pzXR0trjtXYAL4Kyfa+wI8Htq4GOcOezRURqamttNvJtkRWlyQa37AAgAgJwBgcA9d4DoOmuQ/SAYEHaidqL2o8cMrcCAUDgsQAhkZYKA54sA/QFANeegZID9gHaz9rL2sji/9ojHHvaiaH0gaYOomWOC+XCBwgeCaY+AwQhNnVH9XQr5egHpn4CYammHgIDqEP2CEOh2j3apiCMIIsEAcpN2oex2oPb4gPl/wAJvyky+DwCAWIJCgICzAsMABug9gXaiaH0AfSB9IGoYQIB1A0OAgFIDxAAwwgxwCSXwTgAdDTAwFxsJUTXwPwC+D6QPpAMfoAMXHXIfoAMfoAMHOptAAC0x+CEA+KfqVSILqVMTRZ8AjgghAXjUUZUiC6ljFERAPwCeA1ghBZXwe8upNZ8ArgXwSED/LwgABE+kQwcLry4U2ACASAREgIBIBcYAfEA9M/+gD6QCHwAe1E0PoA+kD6QNQwUTahUirHBfLiwSjC//LiwlQ0QnBUIBNUFAPIUAT6AljPFgHPFszJIsjLARL0APQAywDJIPkAcHTIywLKB8v/ydAE+kD0BDH6ACDXScIA8uLEd4AYyMsFUAjPFnD6AhfLaxPMgEwP3O1E0PoA+kD6QNQwCNM/+gBRUaAF+kD6QFNbxwVUc21wVCATVBQDyFAE+gJYzxYBzxbMySLIywES9AD0AMsAyfkAcHTIywLKB8v/ydBQDccFHLHy4sMK+gBRqKGCCJiWgIIImJaAErYIoYII5OHAoBihJ+MPJdcLAcMAI4BQVFgCughAXjUUZyMsfGcs/UAf6AiLPFlAGzxYl+gJQA88WyVAFzCORcpFx4lAIqBOgggjk4cCqAIIImJaAoKAUvPLixQTJgED7ABAjyFAE+gJYzxYBzxbMye1UAHBSeaAYoYIQc2LQnMjLH1Iwyz9Y+gJQB88WUAfPFslxgBDIywUkzxZQBvoCFctqFMzJcfsAECQQIwAOEEkQODdfBAB2wgCwjiGCENUydttwgBDIywVQCM8WUAT6AhbLahLLHxLLP8ly+wCTNWwh4gPIUAT6AljPFgHPFszJ7VQA2ztRND6APpA+kDUMAfTP/oA+kAwUVGhUknHBfLiwSfC//LiwoII5OHAqgAWoBa88uLDghB73ZfeyMsfFcs/UAP6AiLPFgHPFslxgBjIywUkzxZw+gLLaszJgED7AEATyFAE+gJYzxYBzxbMye1UgAIMgCDXIe1E0PoA+kD6QNQwBNMfghAXjUUZUiC6ghB73ZfeE7oSsfLixdM/MfoAMBOgUCPIUAT6AljPFgHPFszJ7VSBF9sbT",
+        "frozen_hash": "",
+        "sync_utime": 1788799136,
+        "state": "active",
+        "suspended": false
+      },
+      "@extra": "1788799137:7:12.75"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:3e5ffca8ddfcf36c36c9ff46f31562aab51b9914845ad6c26cbde649d58a5588\\\",\\\"method\\\":\\\"get_assets\\\",\\\"stack\\\":[]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 3738,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAAwAAAQiFl+L/",
+              "object": {
+                "data": {
+                  "b64": "CA==",
+                  "len": 4
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ],
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQxALETqZS1AkoWcZ9pE5Mo63WVlsOKJfWQKLFG/s3DYh3+iNJO1L",
+              "object": {
+                "data": {
+                  "b64": "EAsROplLUCShZxn2kTkyjrdZWWw4ol9ZAosUb+zcNiHf6A==",
+                  "len": 268
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215879,
+          "root_hash": "bbJcE00L0m8R8ERQ3hmY4KlOw+rOTkKKD68VSv2Ll5s=",
+          "file_hash": "p+akYRHnYO+Gofwh9wwguNfD+NvS5MaVzes1AhGwWPg="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951821000024",
+          "hash": "remrs0W7l0WStHB3kuDWFdwOHNOwx/1YALbVse+ixjg="
+        }
+      },
+      "@extra": "1788799137:8:22.027"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:3e5ffca8ddfcf36c36c9ff46f31562aab51b9914845ad6c26cbde649d58a5588\\\",\\\"method\\\":\\\"get_reserves\\\",\\\"stack\\\":[]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 3811,
+        "stack": [
+          [
+            "num",
+            "0xb8edbc5af107"
+          ],
+          [
+            "num",
+            "0x422a3eb2ae"
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215879,
+          "root_hash": "bbJcE00L0m8R8ERQ3hmY4KlOw+rOTkKKD68VSv2Ll5s=",
+          "file_hash": "p+akYRHnYO+Gofwh9wwguNfD+NvS5MaVzes1AhGwWPg="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951821000024",
+          "hash": "remrs0W7l0WStHB3kuDWFdwOHNOwx/1YALbVse+ixjg="
+        }
+      },
+      "@extra": "1788799137:10:19.107"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:3e5ffca8ddfcf36c36c9ff46f31562aab51b9914845ad6c26cbde649d58a5588\\\",\\\"method\\\":\\\"estimate_swap_out\\\",\\\"stack\\\":[[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAAwAAAQiFl+L/\\\"],[\\\"num\\\",\\\"10000000\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 4730,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQxALETqZS1AkoWcZ9pE5Mo63WVlsOKJfWQKLFG/s3DYh3+iNJO1L",
+              "object": {
+                "data": {
+                  "b64": "EAsROplLUCShZxn2kTkyjrdZWWw4ol9ZAosUb+zcNiHf6A==",
+                  "len": 268
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ],
+          [
+            "num",
+            "0x368a"
+          ],
+          [
+            "num",
+            "0x2710"
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215879,
+          "root_hash": "bbJcE00L0m8R8ERQ3hmY4KlOw+rOTkKKD68VSv2Ll5s=",
+          "file_hash": "p+akYRHnYO+Gofwh9wwguNfD+NvS5MaVzes1AhGwWPg="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951821000024",
+          "hash": "remrs0W7l0WStHB3kuDWFdwOHNOwx/1YALbVse+ixjg="
+        }
+      },
+      "@extra": "1788799137:13:22.754"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:5f0564fb5f604783db57031ce1cf668a88d4d4d6da6de4db222b4b920d6fd800\\\",\\\"method\\\":\\\"get_vault_address\\\",\\\"stack\\\":[[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAAwAAAQiFl+L/\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 4575,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AbXCp06bEpd4ZOkDMZrE3J676U01pfStnQH4TIlq4RpBBb+TkS",
+              "object": {
+                "data": {
+                  "b64": "gBtcKnTpsSl3hk6QMxmsTcnrvpTTWl9K2dAfhMiWrhGkEA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215879,
+          "root_hash": "bbJcE00L0m8R8ERQ3hmY4KlOw+rOTkKKD68VSv2Ll5s=",
+          "file_hash": "p+akYRHnYO+Gofwh9wwguNfD+NvS5MaVzes1AhGwWPg="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101940689000012",
+          "hash": "wPbSIJ1a+hsIGem9z9qwwAxjt0XfAF1bqDS2UpRGOx0="
+        }
+      },
+      "@extra": "1788799137:7:23.118"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"getAddressInformation\\\",\\\"params\\\":{\\\"address\\\":\\\"0:dae153a74d894bbc32748198cd626e4f5df4a69ad2fa56ce80fc2644b5708d20\\\"}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "raw.fullAccountState",
+        "balance": "1899319441127036",
+        "extra_currencies": [],
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951866000004",
+          "hash": "V7GSqvfojbdaiMCB5gUNicyd0FwmFQD4SCCEBXTQFFU="
+        },
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215879,
+          "root_hash": "bbJcE00L0m8R8ERQ3hmY4KlOw+rOTkKKD68VSv2Ll5s=",
+          "file_hash": "p+akYRHnYO+Gofwh9wwguNfD+NvS5MaVzes1AhGwWPg="
+        },
+        "code": "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",
+        "data": "te6cckEBBgEA6gACVYAL4Kyfa+wI8Htq4GOcOezRURqamttNvJtkRWlyQa37AAAAjg1+14gDwAcBAgBFgAvgrJ9r7Ajwe2rgY5w57NFRGpqa2028m2RFaXJBrfsAACEBFP8A9KQT9LzyyAsDAgJwBAUA9d4DoOmuQ/SAYEHaidqL2o8cMrcCAUDgsQAhkZYKA54sA/QFANeegZID9gHaz9rL2sji/9ojHHvaiaH0gaYOomWOC+XCBwgeCaY+AwQhNnVH9XQr5egHpn4CYammHgIDqEP2CEOh2j3apiCMIIsEAcpN2oex2oPb4gPl/wAJvyky+DxcYRWx",
+        "frozen_hash": "",
+        "sync_utime": 1788799136,
+        "state": "active",
+        "suspended": false
+      },
+      "@extra": "1788799137:17:8.623"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:dae153a74d894bbc32748198cd626e4f5df4a69ad2fa56ce80fc2644b5708d20\\\",\\\"method\\\":\\\"get_asset\\\",\\\"stack\\\":[]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 613,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAAwAAAQiFl+L/",
+              "object": {
+                "data": {
+                  "b64": "CA==",
+                  "len": 4
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215879,
+          "root_hash": "bbJcE00L0m8R8ERQ3hmY4KlOw+rOTkKKD68VSv2Ll5s=",
+          "file_hash": "p+akYRHnYO+Gofwh9wwguNfD+NvS5MaVzes1AhGwWPg="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951866000004",
+          "hash": "V7GSqvfojbdaiMCB5gUNicyd0FwmFQD4SCCEBXTQFFU="
+        }
+      },
+      "@extra": "1788799137:14:24.344"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:dae153a74d894bbc32748198cd626e4f5df4a69ad2fa56ce80fc2644b5708d20\\\",\\\"method\\\":\\\"get_factory_addr\\\",\\\"stack\\\":[]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 1144,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AL4Kyfa+wI8Htq4GOcOezRURqamttNvJtkRWlyQa37ABCyGHSW",
+              "object": {
+                "data": {
+                  "b64": "gAvgrJ9r7Ajwe2rgY5w57NFRGpqa2028m2RFaXJBrfsAEA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215879,
+          "root_hash": "bbJcE00L0m8R8ERQ3hmY4KlOw+rOTkKKD68VSv2Ll5s=",
+          "file_hash": "p+akYRHnYO+Gofwh9wwguNfD+NvS5MaVzes1AhGwWPg="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951866000004",
+          "hash": "V7GSqvfojbdaiMCB5gUNicyd0FwmFQD4SCCEBXTQFFU="
+        }
+      },
+      "@extra": "1788799138:14:21.152"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:5f0564fb5f604783db57031ce1cf668a88d4d4d6da6de4db222b4b920d6fd800\\\",\\\"method\\\":\\\"get_vault_address\\\",\\\"stack\\\":[[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQxALETqZS1AkoWcZ9pE5Mo63WVlsOKJfWQKLFG/s3DYh3+iNJO1L\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 4575,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4ADFVHF3aouj7XAZ4DzcnEHsoOVseyos+XdOa6Oltcdq7AgtXUP",
+              "object": {
+                "data": {
+                  "b64": "gAMVUcXdqi6PtcBngPNycQeyg5Wx7Kiz5d05ro6W1x2rsA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215880,
+          "root_hash": "x/oTyQ2dYIY1qC2U5WUO87kHN0t3SDqWNXdv+P46FpY=",
+          "file_hash": "sQ3olrH4xzW8eI8KgPBxNVkntWbF5gmMUYkf5PsQfQs="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101940689000012",
+          "hash": "wPbSIJ1a+hsIGem9z9qwwAxjt0XfAF1bqDS2UpRGOx0="
+        }
+      },
+      "@extra": "1788799138:11:23.527"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"getAddressInformation\\\",\\\"params\\\":{\\\"address\\\":\\\"0:18aa8e2eed51747dae033c079b93883d941cad8f65459f2ee9cd7474b6b8ed5d\\\"}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "raw.fullAccountState",
+        "balance": "60545114",
+        "extra_currencies": [],
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951821000022",
+          "hash": "BkhpfrwJM7FsCOF6Mn3hhaPHW0vpPUAlcs/85lXyhUs="
+        },
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215880,
+          "root_hash": "x/oTyQ2dYIY1qC2U5WUO87kHN0t3SDqWNXdv+P46FpY=",
+          "file_hash": "sQ3olrH4xzW8eI8KgPBxNVkntWbF5gmMUYkf5PsQfQs="
+        },
+        "code": "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",
+        "data": "te6cckECBgEAASUAAonACxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id/oARG1jPmdW3OVzfVY4jHguB9Su+bYVSXNDVhzssYhoUcOAAcBAgCHgAvgrJ9r7Ajwe2rgY5w57NFRGpqa2028m2RFaXJBrfsAACIBYidTKWoElCzjPtInJlHW6ysthxRL6yBRYo39m4bEO/0BFP8A9KQT9LzyyAsDAgJwBAUA9d4DoOmuQ/SAYEHaidqL2o8cMrcCAUDgsQAhkZYKA54sA/QFANeegZID9gHaz9rL2sji/9ojHHvaiaH0gaYOomWOC+XCBwgeCaY+AwQhNnVH9XQr5egHpn4CYammHgIDqEP2CEOh2j3apiCMIIsEAcpN2oex2oPb4gPl/wAJvyky+DwlWEMT",
+        "frozen_hash": "",
+        "sync_utime": 1788799137,
+        "state": "active",
+        "suspended": false
+      },
+      "@extra": "1788799138:12:9.431"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:18aa8e2eed51747dae033c079b93883d941cad8f65459f2ee9cd7474b6b8ed5d\\\",\\\"method\\\":\\\"get_asset\\\",\\\"stack\\\":[]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 2077,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQxALETqZS1AkoWcZ9pE5Mo63WVlsOKJfWQKLFG/s3DYh3+iNJO1L",
+              "object": {
+                "data": {
+                  "b64": "EAsROplLUCShZxn2kTkyjrdZWWw4ol9ZAosUb+zcNiHf6A==",
+                  "len": 268
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215881,
+          "root_hash": "1y6RYuKzyV/W9mjhYZ+UiDfNX/ASu6j79B0Copn20kk=",
+          "file_hash": "mRFlOALKj5yKaPwZGPi6TTHtRvFwmsuPqKgaom3dxg4="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951821000022",
+          "hash": "BkhpfrwJM7FsCOF6Mn3hhaPHW0vpPUAlcs/85lXyhUs="
+        }
+      },
+      "@extra": "1788799138:17:31.089"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:18aa8e2eed51747dae033c079b93883d941cad8f65459f2ee9cd7474b6b8ed5d\\\",\\\"method\\\":\\\"get_factory_addr\\\",\\\"stack\\\":[]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 2103,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AL4Kyfa+wI8Htq4GOcOezRURqamttNvJtkRWlyQa37ABCyGHSW",
+              "object": {
+                "data": {
+                  "b64": "gAvgrJ9r7Ajwe2rgY5w57NFRGpqa2028m2RFaXJBrfsAEA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215881,
+          "root_hash": "1y6RYuKzyV/W9mjhYZ+UiDfNX/ASu6j79B0Copn20kk=",
+          "file_hash": "mRFlOALKj5yKaPwZGPi6TTHtRvFwmsuPqKgaom3dxg4="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951821000022",
+          "hash": "BkhpfrwJM7FsCOF6Mn3hhaPHW0vpPUAlcs/85lXyhUs="
+        }
+      },
+      "@extra": "1788799138:2:26.603"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:18aa8e2eed51747dae033c079b93883d941cad8f65459f2ee9cd7474b6b8ed5d\\\",\\\"method\\\":\\\"is_ready\\\",\\\"stack\\\":[]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 1977,
+        "stack": [
+          [
+            "num",
+            "-0x1"
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215881,
+          "root_hash": "1y6RYuKzyV/W9mjhYZ+UiDfNX/ASu6j79B0Copn20kk=",
+          "file_hash": "mRFlOALKj5yKaPwZGPi6TTHtRvFwmsuPqKgaom3dxg4="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951821000022",
+          "hash": "BkhpfrwJM7FsCOF6Mn3hhaPHW0vpPUAlcs/85lXyhUs="
+        }
+      },
+      "@extra": "1788799138:9:23.335"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:b113a994b5024a16719f69139328eb759596c38a25f59028b146fecdc3621dfe\\\",\\\"method\\\":\\\"get_wallet_address\\\",\\\"stack\\\":[[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQ4ADFVHF3aouj7XAZ4DzcnEHsoOVseyos+XdOa6Oltcdq7AgtXUP\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 3143,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4ARG1jPmdW3OVzfVY4jHguB9Su+bYVSXNDVhzssYhoUcPBJHiFL",
+              "object": {
+                "data": {
+                  "b64": "gBEbWM+Z1bc5XN9VjiMeC4H1K75thVJc0NWHOyxiGhRw8A==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215882,
+          "root_hash": "y3t2myKytwYs/HfbzziqIZIGI4EG5T+x3FTFk1gJjY0=",
+          "file_hash": "a2xUgpEfRkmHntxAiZiso+F9Zva76tNgkL6HTSi2lrE="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951347000013",
+          "hash": "vVhUR0/Lv4xBZmeZK4Vh3ugBiojxjX5DpIs5G4xneVc="
+        }
+      },
+      "@extra": "1788799138:13:29.894"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:18aa8e2eed51747dae033c079b93883d941cad8f65459f2ee9cd7474b6b8ed5d\\\",\\\"method\\\":\\\"get_wallet_addr\\\",\\\"stack\\\":[]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 1977,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4ARG1jPmdW3OVzfVY4jHguB9Su+bYVSXNDVhzssYhoUcPBJHiFL",
+              "object": {
+                "data": {
+                  "b64": "gBEbWM+Z1bc5XN9VjiMeC4H1K75thVJc0NWHOyxiGhRw8A==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215882,
+          "root_hash": "y3t2myKytwYs/HfbzziqIZIGI4EG5T+x3FTFk1gJjY0=",
+          "file_hash": "a2xUgpEfRkmHntxAiZiso+F9Zva76tNgkL6HTSi2lrE="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951821000022",
+          "hash": "BkhpfrwJM7FsCOF6Mn3hhaPHW0vpPUAlcs/85lXyhUs="
+        }
+      },
+      "@extra": "1788799139:7:22.736"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:88dac67cceadb9cae6faac7118f05c0fa95df36c2a92e686ac39d96310d0a387\\\",\\\"method\\\":\\\"get_wallet_data\\\",\\\"stack\\\":[]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 837,
+        "stack": [
+          [
+            "num",
+            "0xaeca462423"
+          ],
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4ADFVHF3aouj7XAZ4DzcnEHsoOVseyos+XdOa6Oltcdq7AgtXUP",
+              "object": {
+                "data": {
+                  "b64": "gAMVUcXdqi6PtcBngPNycQeyg5Wx7Kiz5d05ro6W1x2rsA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ],
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AWInUylqBJQs4z7SJyZR1usrLYcUS+sgUWKN/ZuGxDv9C6Xu/I",
+              "object": {
+                "data": {
+                  "b64": "gBYidTKWoElCzjPtInJlHW6ysthxRL6yBRYo39m4bEO/0A==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ],
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAIwAIQgKPRS16Tf10BmtoI2UXclntBXNENb52tf1L1divK3w9aCBrv3Y=",
+              "object": {
+                "data": {
+                  "b64": "Ao9FLXpN/XQGa2gjZRdyWe0Fc0Q1vna1/UvV2K8rfD1o",
+                  "len": 264
+                },
+                "refs": [],
+                "special": true
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215882,
+          "root_hash": "y3t2myKytwYs/HfbzziqIZIGI4EG5T+x3FTFk1gJjY0=",
+          "file_hash": "a2xUgpEfRkmHntxAiZiso+F9Zva76tNgkL6HTSi2lrE="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951821000020",
+          "hash": "nJDKw0aH9/9/oLX72NRCyAZCAZ75F7bQR1WJJ3Igli8="
+        }
+      },
+      "@extra": "1788799139:7:23.367"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"getAddressInformation\\\",\\\"params\\\":{\\\"address\\\":\\\"0:f76d04b28f1ea3858e6a770a5b9f8d4a19520ac344d06021fd9a93b543e06e0c\\\"}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "raw.fullAccountState",
+        "balance": "0",
+        "extra_currencies": [],
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "0",
+          "hash": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215883,
+          "root_hash": "52FTdBTzF/xnXiQL4lbiMBn19kuSkW/gjFkFBd7wy00=",
+          "file_hash": "egkQRoDoyfzULieaY3+4AS/s8c+EsNJeFBpqTFEMkU8="
+        },
+        "code": "",
+        "data": "",
+        "frozen_hash": "",
+        "sync_utime": 1788799138,
+        "state": "uninitialized",
+        "suspended": false
+      },
+      "@extra": "1788799139:1:16.684"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:b113a994b5024a16719f69139328eb759596c38a25f59028b146fecdc3621dfe\\\",\\\"method\\\":\\\"get_wallet_address\\\",\\\"stack\\\":[[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQ4AAICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDD5x+96\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 3143,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4Aeoa8oIxwy4iWY/TPBYq+UuKS/1MAV9djbVtKhcPXb91C9OdUL",
+              "object": {
+                "data": {
+                  "b64": "gB6hrygjHDLiJZj9M8Fir5S4pL/UwBX12NtW0qFw9dv3UA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215883,
+          "root_hash": "52FTdBTzF/xnXiQL4lbiMBn19kuSkW/gjFkFBd7wy00=",
+          "file_hash": "egkQRoDoyfzULieaY3+4AS/s8c+EsNJeFBpqTFEMkU8="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951347000013",
+          "hash": "vVhUR0/Lv4xBZmeZK4Vh3ugBiojxjX5DpIs5G4xneVc="
+        }
+      },
+      "@extra": "1788799139:11:30.431"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:5f0564fb5f604783db57031ce1cf668a88d4d4d6da6de4db222b4b920d6fd800\\\",\\\"method\\\":\\\"get_pool_address\\\",\\\"stack\\\":[[\\\"num\\\",\\\"0\\\"],[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQxALETqZS1AkoWcZ9pE5Mo63WVlsOKJfWQKLFG/s3DYh3+iNJO1L\\\"],[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAAwAAAQiFl+L/\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 5130,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AHy/+VG7+ebYbZP+jeYqxVVqNzIpCLWthNl7zJOrFKsRAS4Smq",
+              "object": {
+                "data": {
+                  "b64": "gAfL/5Ubv55thtk/6N5irFVWo3MikIta2E2XvMk6sUqxEA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215883,
+          "root_hash": "52FTdBTzF/xnXiQL4lbiMBn19kuSkW/gjFkFBd7wy00=",
+          "file_hash": "egkQRoDoyfzULieaY3+4AS/s8c+EsNJeFBpqTFEMkU8="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101940689000012",
+          "hash": "wPbSIJ1a+hsIGem9z9qwwAxjt0XfAF1bqDS2UpRGOx0="
+        }
+      },
+      "@extra": "1788799139:7:23.628"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:5f0564fb5f604783db57031ce1cf668a88d4d4d6da6de4db222b4b920d6fd800\\\",\\\"method\\\":\\\"get_pool_address\\\",\\\"stack\\\":[[\\\"num\\\",\\\"1\\\"],[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQxALETqZS1AkoWcZ9pE5Mo63WVlsOKJfWQKLFG/s3DYh3+iNJO1L\\\"],[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAAwAAAQiFl+L/\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 5130,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4Ae7aCWUePUcLHNTuFLc/GpQypBWGiaDAQ/s1J2qHwNwZASYypX",
+              "object": {
+                "data": {
+                  "b64": "gB7toJZR49Rwsc1O4Utz8alDKkFYaJoMBD+zUnaofA3BkA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215884,
+          "root_hash": "yNf7jY0gGFvEkx8WpkSHPcqYk/SihXV6otPYbLwdex4=",
+          "file_hash": "kWYogvMgY9aPDmAD1YUjc9Xc3qcd/qZG+PIp4wDH+hU="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101940689000012",
+          "hash": "wPbSIJ1a+hsIGem9z9qwwAxjt0XfAF1bqDS2UpRGOx0="
+        }
+      },
+      "@extra": "1788799139:1:20.943"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:3e5ffca8ddfcf36c36c9ff46f31562aab51b9914845ad6c26cbde649d58a5588\\\",\\\"method\\\":\\\"estimate_swap_out\\\",\\\"stack\\\":[[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQxALETqZS1AkoWcZ9pE5Mo63WVlsOKJfWQKLFG/s3DYh3+iNJO1L\\\"],[\\\"num\\\",\\\"1000000\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 4782,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAAwAAAQiFl+L/",
+              "object": {
+                "data": {
+                  "b64": "CA==",
+                  "len": 4
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ],
+          [
+            "num",
+            "0x2a9adc54"
+          ],
+          [
+            "num",
+            "0x3e8"
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215884,
+          "root_hash": "yNf7jY0gGFvEkx8WpkSHPcqYk/SihXV6otPYbLwdex4=",
+          "file_hash": "kWYogvMgY9aPDmAD1YUjc9Xc3qcd/qZG+PIp4wDH+hU="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101951821000024",
+          "hash": "remrs0W7l0WStHB3kuDWFdwOHNOwx/1YALbVse+ixjg="
+        }
+      },
+      "@extra": "1788799139:8:25.696"
+    },
+    "[\"https://mainnet.api.dedust.io/v4/api/coins?query=jetton%3A0%3A0efed6292db3eaf863977a061362d15a434b4c9312c1c73605f1c5021865808f&limit=10\",\"GET\",\"\"]": {
+      "items": [
+        {
+          "asset": "jetton:0:0efed6292db3eaf863977a061362d15a434b4c9312c1c73605f1c5021865808f",
+          "ath_date": "2026-07-27T20:08:10.983562Z",
+          "ath_market_cap_usd": "343903.4178639619",
+          "ath_usd": "0.0003439034178639619",
+          "atl_date": "2026-05-24T10:25:07.981257Z",
+          "atl_market_cap_usd": "605.15034849382841718166224",
+          "atl_usd": "0.00000060515034849382841718166224",
+          "buy_tax": 0,
+          "circulating_supply": "1000000000000000000",
+          "created_at": "2026-05-07T12:16:13Z",
+          "fully_diluted_market_cap": "105182.55247778106",
+          "holders": 0,
+          "liquidity": "17035.49768082348566807747388",
+          "market_cap": "105182.55247778106",
+          "metadata": {
+            "decimals": 9,
+            "description": "Dedicated to the creator of UTYA stickers | Deployed from Groypad. | Creator Fees are directed to @egorzhgun",
+            "image_url": "https://cdn.dedust.io/images/jetton:0:0efed6292db3eaf863977a061362d15a434b4c9312c1c73605f1c5021865808f.webp?v=1778156185",
+            "name": "EGOR ZHGUN",
+            "social_links": {
+              "telegram": "https://t.me/egorzhgun_support"
+            },
+            "ticker": "EGOR",
+            "usd_price": "0.000105182"
+          },
+          "price": {
+            "ton_change": {
+              "d7": -8.14487707355983,
+              "h1": 0,
+              "h24": -0.05327721591184,
+              "h6": -0.30505576280222,
+              "m15": 0
+            },
+            "ton_value": "0.0000753804769022",
+            "usd_change": {
+              "d7": -9.19390161257239,
+              "h1": 0,
+              "h24": -1.73328199097057,
+              "h6": -1.4541407264141,
+              "m15": 0
+            },
+            "usd_value": "0.00010518255247778106"
+          },
+          "sell_tax": 0,
+          "tags": [
+            "dedust_v3_memepad",
+            "migrated_to_dex"
+          ],
+          "total_supply": "1000000000000000000",
+          "traders": {
+            "buy": {
+              "d7": 58,
+              "h1": 0,
+              "h24": 8,
+              "h6": 1,
+              "m15": 0
+            },
+            "sell": {
+              "d7": 55,
+              "h1": 1,
+              "h24": 10,
+              "h6": 1,
+              "m15": 0
+            },
+            "total": {
+              "d7": 94,
+              "h1": 1,
+              "h24": 16,
+              "h6": 2,
+              "m15": 0
+            }
+          },
+          "transactions": {
+            "buy": {
+              "d7": 130,
+              "h1": 0,
+              "h24": 16,
+              "h6": 1,
+              "m15": 0
+            },
+            "sell": {
+              "d7": 102,
+              "h1": 1,
+              "h24": 14,
+              "h6": 1,
+              "m15": 0
+            }
+          },
+          "verification_level": 4,
+          "volume": {
+            "buy_periods": {
+              "d7": "5180.0206172519115764318500410307",
+              "h1": "0",
+              "h24": "586.98854693238838607483884167401",
+              "h6": "1.37072812079844420800787580064",
+              "m15": "0"
+            },
+            "change": {
+              "d7": -12.08704094927864,
+              "h1": 0,
+              "h24": -38.13968475368477,
+              "h6": -87.75975799979031,
+              "m15": -100
+            },
+            "periods": {
+              "d7": "10995.91735385462257636263646266181",
+              "h1": "13.00186495871798287967894545248",
+              "h24": "961.64718875522152005487720711144",
+              "h6": "14.37259307951642708768682125312",
+              "m15": "0"
+            },
+            "sell_periods": {
+              "d7": "5815.89673660271099993078642163111",
+              "h1": "13.00186495871798287967894545248",
+              "h24": "374.65864182283313398003836543743",
+              "h6": "13.00186495871798287967894545248",
+              "m15": "0"
+            }
+          }
+        }
+      ],
+      "total_count": 1
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:5f0564fb5f604783db57031ce1cf668a88d4d4d6da6de4db222b4b920d6fd800\\\",\\\"method\\\":\\\"get_pool_address\\\",\\\"stack\\\":[[\\\"num\\\",\\\"0\\\"],[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAAwAAAQiFl+L/\\\"],[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQxAA7+1ikts+r4Y5d6BhNi0VpDS0yTEsHHNgXxxQIYZYCPiRxc5y\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 5091,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AIlIdx/Ae+iA/MOBFd1NdmNIa329ATsPsjj1XWmeWhyNAurpJL",
+              "object": {
+                "data": {
+                  "b64": "gAiUh3H8B76ID8w4EV3U12Y0hrfb0BOw+yOPVdaZ5aHI0A==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215885,
+          "root_hash": "t3cLVkjluiw/LBAhqxm7uKgZSpXP4VBlhes4832XNkk=",
+          "file_hash": "mhq6RdoAc2Ee2/Kd+dBbe+ZabcPmXjpc283cExa58xA="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101940689000012",
+          "hash": "wPbSIJ1a+hsIGem9z9qwwAxjt0XfAF1bqDS2UpRGOx0="
+        }
+      },
+      "@extra": "1788799140:14:25.356"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:5f0564fb5f604783db57031ce1cf668a88d4d4d6da6de4db222b4b920d6fd800\\\",\\\"method\\\":\\\"get_pool_address\\\",\\\"stack\\\":[[\\\"num\\\",\\\"1\\\"],[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAAwAAAQiFl+L/\\\"],[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQxAA7+1ikts+r4Y5d6BhNi0VpDS0yTEsHHNgXxxQIYZYCPiRxc5y\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 5091,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4ABJdS8h0vmnsiULq9Z0WSQp37SOBJNp5g1n1XEX49tD7BgU1DS",
+              "object": {
+                "data": {
+                  "b64": "gAEl1LyHS+aeyJQur1nRZJCnftI4Ek2nmDWfVcRfj20PsA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215885,
+          "root_hash": "t3cLVkjluiw/LBAhqxm7uKgZSpXP4VBlhes4832XNkk=",
+          "file_hash": "mhq6RdoAc2Ee2/Kd+dBbe+ZabcPmXjpc283cExa58xA="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101940689000012",
+          "hash": "wPbSIJ1a+hsIGem9z9qwwAxjt0XfAF1bqDS2UpRGOx0="
+        }
+      },
+      "@extra": "1788799140:11:19.196"
+    },
+    "[\"https://toncenter.com/api/v3/messages?source=0%3A0efed6292db3eaf863977a061362d15a434b4c9312c1c73605f1c5021865808f&direction=out&opcode=0xde8402ce&limit=4\",\"GET\",\"\"]": {
+      "messages": [
+        {
+          "hash": "ooBcH3FaA4SvUWnQXZ/9iGLKTFQh98AXw3W3xTprzeE=",
+          "source": "0:0EFED6292DB3EAF863977A061362D15A434B4C9312C1C73605F1C5021865808F",
+          "destination": "0:8F5DFA5CFD6660DB32E870B20DD3E63226E4B07BA57C18FB0F704957DB78F508",
+          "value": "300000000",
+          "value_extra_currencies": {},
+          "fwd_fee": "134491",
+          "ihr_fee": "0",
+          "extra_flags": "0",
+          "created_lt": "79199309000012",
+          "created_at": "1779661880",
+          "opcode": "0xde8402ce",
+          "decoded_opcode": null,
+          "ihr_disabled": true,
+          "bounce": true,
+          "bounced": false,
+          "import_fee": null,
+          "out_msg_tx_hash": "K2b+3fDqGePRIMDO5ZXdB/ytNU28QqnEoGEMwt1bjaE=",
+          "message_content": {
+            "hash": "5cgAfop8ajktuyfPlmUscc2kKlf9bsJ8m3AvYgyuYOE=",
+            "body": "te6cckEBAQEADwAAGd6EAs6N2V4LAGaUH0BE2i4X",
+            "decoded": null
+          },
+          "init_state": {
+            "hash": "j136XP1mYNsy6HCyDdPmMibksHulfBj7D3BJV9t49Qg=",
+            "body": "te6cckEBBwEAygACATQBAghCAoe1ZsAZocb8aR3MUEJVk2jbdVQo744PResjreARjEw2AwUAAEADBAUBjyAAd/axSW2fV8Mcu9AwmxaK0hpaZJiWDjmwL44oEMMsBHwApYJEdHi4FgEdLWYfGG0Mg6mviZ+cFD9VxzywwekZgD8BLAAAkgYABwAAACAAQ4AGbMnzAnwX+ybWJmZsXet1Jb+BbAKyNKwRXRmt8LYB1oIARQKAAd/axSW2fV8Mcu9AwmxaK0hpaZJiWDjmwL44oEMMsBHwgphJ5Q==",
+            "decoded": null
+          }
+        }
+      ],
+      "address_book": {
+        "0:0EFED6292DB3EAF863977A061362D15A434B4C9312C1C73605F1C5021865808F": {
+          "user_friendly": "EQAO_tYpLbPq-GOXegYTYtFaQ0tMkxLBxzYF8cUCGGWAj_aA",
+          "domain": "egor-zhgun.ton",
+          "interfaces": []
+        },
+        "0:8F5DFA5CFD6660DB32E870B20DD3E63226E4B07BA57C18FB0F704957DB78F508": {
+          "user_friendly": "EQCPXfpc_WZg2zLocLIN0-YyJuSwe6V8GPsPcElX23j1CHYF",
+          "domain": null,
+          "interfaces": []
+        }
+      },
+      "metadata": {
+        "0:0EFED6292DB3EAF863977A061362D15A434B4C9312C1C73605F1C5021865808F": {
+          "is_indexed": true,
+          "token_info": [
+            {
+              "valid": true,
+              "type": "jetton_masters",
+              "name": "EGOR ZHGUN",
+              "symbol": "EGOR",
+              "description": "Dedicated to the creator of UTYA stickers | Deployed from Groypad. | Creator Fees are directed to @egorzhgun",
+              "image": "ipfs://QmWHDYPKkLR6U3prFhSDbzpBtAT6tuTeyk7fPsioui1NGp",
+              "is_nsfw": false,
+              "is_scam": false,
+              "extra": {
+                "_image_big": "https://proxy.toncenter.com/5Z_RqatlHJy3qu8caWl2uvPnb_RXI-xZ7DbLSoVuVZA/pr:big/bG9jYWw6Ly8vMjQvOWMvMjQ5YzI0ZTNkODMzYmY4MmE1ZmU0MTk2ZjdhOWNlZTg5YzExZDQ3ZTIxMmViYTE4OTRlM2JhZDZjMzJjZTZmYw",
+                "_image_medium": "https://proxy.toncenter.com/-DE97vNhP0xHHxk789l5NMQvrIrqi5488Naqb-vf3Tw/pr:medium/bG9jYWw6Ly8vMjQvOWMvMjQ5YzI0ZTNkODMzYmY4MmE1ZmU0MTk2ZjdhOWNlZTg5YzExZDQ3ZTIxMmViYTE4OTRlM2JhZDZjMzJjZTZmYw",
+                "_image_small": "https://proxy.toncenter.com/EIVZf3ZxZIXWK7XdVWXQ0Hab_e5nYvf3CSfzeZIu6pI/pr:small/bG9jYWw6Ly8vMjQvOWMvMjQ5YzI0ZTNkODMzYmY4MmE1ZmU0MTk2ZjdhOWNlZTg5YzExZDQ3ZTIxMmViYTE4OTRlM2JhZDZjMzJjZTZmYw",
+                "decimals": "9",
+                "social": [
+                  "https://t.me/egorzhgun_support"
+                ],
+                "uri": "ipfs://QmXmw3SP7iinw6saK5Pbd9ZuURJeQAeASxPmE3V27DBCDs"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"getAddressInformation\\\",\\\"params\\\":{\\\"address\\\":\\\"0:44a43b8fe03df4407e61c08aeea6bb31a435bede809d87d91c7aaeb4cf2d0e46\\\"}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "raw.fullAccountState",
+        "balance": "0",
+        "extra_currencies": [],
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "0",
+          "hash": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215886,
+          "root_hash": "7f1DOoQpZD3OcdMtfcWAYcsUUIv9U+Z0pkTjw2Wy7ZY=",
+          "file_hash": "NMGj6x2xCGNUtbSNge5hzL6eEr5VsyU8zfubdj9oMgQ="
+        },
+        "code": "",
+        "data": "",
+        "frozen_hash": "",
+        "sync_utime": 1788799139,
+        "state": "uninitialized",
+        "suspended": false
+      },
+      "@extra": "1788799140:1:15.816"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"getAddressInformation\\\",\\\"params\\\":{\\\"address\\\":\\\"0:092ea5e43a5f34f644a1757ace8b24853bf691c0926d3cc1acfaae22fc7b687d\\\"}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "raw.fullAccountState",
+        "balance": "0",
+        "extra_currencies": [],
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "0",
+          "hash": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+        },
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215886,
+          "root_hash": "7f1DOoQpZD3OcdMtfcWAYcsUUIv9U+Z0pkTjw2Wy7ZY=",
+          "file_hash": "NMGj6x2xCGNUtbSNge5hzL6eEr5VsyU8zfubdj9oMgQ="
+        },
+        "code": "",
+        "data": "",
+        "frozen_hash": "",
+        "sync_utime": 1788799139,
+        "state": "uninitialized",
+        "suspended": false
+      },
+      "@extra": "1788799140:4:15.94"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"getAddressInformation\\\",\\\"params\\\":{\\\"address\\\":\\\"0:8f5dfa5cfd6660db32e870b20dd3e63226e4b07ba57c18fb0f704957db78f508\\\"}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "raw.fullAccountState",
+        "balance": "6178237374063",
+        "extra_currencies": [],
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101949269000013",
+          "hash": "tYmYeNOCGV8DtDbYh7269qZaX87j+MdI3hEoj8Is9qA="
+        },
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215886,
+          "root_hash": "7f1DOoQpZD3OcdMtfcWAYcsUUIv9U+Z0pkTjw2Wy7ZY=",
+          "file_hash": "NMGj6x2xCGNUtbSNge5hzL6eEr5VsyU8zfubdj9oMgQ="
+        },
+        "code": "te6cckEBAQEAIwAIQgKHtWbAGaHG/GkdzFBCVZNo23VUKO+OD0XrI63gEYxMNnB+BkM=",
+        "data": "te6cckECBwEAAVcAAy9bgT+6YYH1qzAsakDH4YwAj9m5aWq9dkABAgMBjyAAd/axSW2fV8Mcu9AwmxaK0hpaZJiWDjmwL44oEMMsBHwApYJEdHi4FgEdLWYfGG0Mg6mviZ+cFD9VxzywwekZgD8BLAAAkgQAL1CTiCNuMAB4Gr0C55Pj4u5RMToPvGRgIAJDgAZsyfMCfBf7JtYmZmxd63Ulv4FsArI0rBFdGa3wtgHWmgUGAEUCgAHf2sUltn1fDHLvQMJsWitIaWmSYlg45sC+OKBDDLAR8ACFoAHf2sUltn1fDHLvQMJsWitIaWmSYlg45sC+OKBDDLAR8AI8gFHK2K0qU0Mi3uBgSXkXL7o7SqWNZlpDqVOYuU03lgCFoBHkAo5WxWlSmhkW9wMCS8i5fdHaVSxrMtIdSpzFymm8sAA7+1ikts+r4Y5d6BhNi0VpDS0yTEsHHNgXxxQIYZYCPuTtfNo=",
+        "frozen_hash": "",
+        "sync_utime": 1788799139,
+        "state": "active",
+        "suspended": false
+      },
+      "@extra": "1788799140:17:12.623"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:0efed6292db3eaf863977a061362d15a434b4c9312c1c73605f1c5021865808f\\\",\\\"method\\\":\\\"get_wallet_address\\\",\\\"stack\\\":[[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQ4AR679Ln6zMG2ZdDhZBunzGRNyWD3Svgx9h7gkq+28eoRAx9772\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 3729,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AR5AKOVsVpUpoZFvcDAkvIuX3R2lUsazLSHUqcxcppvLDrlQM7",
+              "object": {
+                "data": {
+                  "b64": "gBHkAo5WxWlSmhkW9wMCS8i5fdHaVSxrMtIdSpzFymm8sA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215886,
+          "root_hash": "7f1DOoQpZD3OcdMtfcWAYcsUUIv9U+Z0pkTjw2Wy7ZY=",
+          "file_hash": "NMGj6x2xCGNUtbSNge5hzL6eEr5VsyU8zfubdj9oMgQ="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "96787620000001",
+          "hash": "VowvPlynM2ffcLSljtg3mNzMdBVMgK2EM0r6fp0Ld70="
+        }
+      },
+      "@extra": "1788799140:16:26.571"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:8f201472b62b4a94d0c8b7b818125e45cbee8ed2a963599690ea54e62e534de5\\\",\\\"method\\\":\\\"get_wallet_data\\\",\\\"stack\\\":[]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 667,
+        "stack": [
+          [
+            "num",
+            "0x11fb372d2d57aec"
+          ],
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AR679Ln6zMG2ZdDhZBunzGRNyWD3Svgx9h7gkq+28eoRAx9772",
+              "object": {
+                "data": {
+                  "b64": "gBHrv0ufrMwbZl0OFkG6fMZE3JYPdK+DH2HuCSr7bx6hEA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ],
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AB39rFJbZ9Xwxy70DCbForSGlpkmJYOObAvjigQwywEfDwCmHN",
+              "object": {
+                "data": {
+                  "b64": "gAHf2sUltn1fDHLvQMJsWitIaWmSYlg45sC+OKBDDLAR8A==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ],
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAIwAIQgLu/OXOPR5VWlAQowk0jJZd+vcuvfMjO09pH6PTe9tWBev4Ooo=",
+              "object": {
+                "data": {
+                  "b64": "Au785c49HlVaUBCjCTSMll369y698yM7T2kfo9N721YF",
+                  "len": 264
+                },
+                "refs": [],
+                "special": true
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215887,
+          "root_hash": "F1kdHt2A3nCie8mbYuMeRqWjdr2pdgdKF+Zld2ems+M=",
+          "file_hash": "qRX33++7Nn/d9o1MmUj85KqgmvzC0i++KwY5zNeEtCs="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101949269000011",
+          "hash": "/e0msbKppG0+WEufsPZPdrnAbHl9r4+sKDEMMcQrV/c="
+        }
+      },
+      "@extra": "1788799141:2:27.046"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:0efed6292db3eaf863977a061362d15a434b4c9312c1c73605f1c5021865808f\\\",\\\"method\\\":\\\"get_wallet_address\\\",\\\"stack\\\":[[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQ4AAICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDD5x+96\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 3729,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AAKpBNwUO7yfCdm2LSB4NtPteZyn6hk+BNylgntcfUcrC2l50H",
+              "object": {
+                "data": {
+                  "b64": "gAAqkE3BQ7vJ8J2bYtIHg20+15nKfqGT4E3KWCe1x9RysA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215887,
+          "root_hash": "F1kdHt2A3nCie8mbYuMeRqWjdr2pdgdKF+Zld2ems+M=",
+          "file_hash": "qRX33++7Nn/d9o1MmUj85KqgmvzC0i++KwY5zNeEtCs="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "96787620000001",
+          "hash": "VowvPlynM2ffcLSljtg3mNzMdBVMgK2EM0r6fp0Ld70="
+        }
+      },
+      "@extra": "1788799141:2:28.481"
+    },
+    "[\"https://mainnet.api.dedust.io/v4/api/coins?query=jetton%3A0%3A3a39b4a8f53b7213c814dc503fbb7a200162c1b32d088e838db422a66c08c1aa&limit=10\",\"GET\",\"\"]": {
+      "items": [
+        {
+          "asset": "jetton:0:3a39b4a8f53b7213c814dc503fbb7a200162c1b32d088e838db422a66c08c1aa",
+          "ath_date": "2026-06-08T05:51:13.986078Z",
+          "ath_market_cap_usd": "15463.030166219004",
+          "ath_usd": "0.000015463030166219004",
+          "atl_date": "2026-06-07T22:22:53.953403Z",
+          "atl_market_cap_usd": "1215.60737585886464200760355",
+          "atl_usd": "0.00000121560737585886464200760355",
+          "buy_tax": 0,
+          "circulating_supply": "1000000000000000000",
+          "created_at": "2026-06-07T22:22:50Z",
+          "fully_diluted_market_cap": "1729.4868383397562",
+          "holders": 0,
+          "liquidity": "1914.86939943877871957073828",
+          "market_cap": "1729.4868383397562",
+          "metadata": {
+            "decimals": 9,
+            "description": "Let's fucking gram! LFG! | Deployed from topblast.lol",
+            "image_url": "https://cdn.dedust.io/images/jetton:0:3a39b4a8f53b7213c814dc503fbb7a200162c1b32d088e838db422a66c08c1aa.webp?v=1780870976",
+            "name": "Let's fucking gram",
+            "ticker": "LFG",
+            "usd_price": "0.000001729"
+          },
+          "price": {
+            "ton_change": {
+              "d7": -9.42777804988668,
+              "h1": 0,
+              "h24": 0,
+              "h6": 0,
+              "m15": 0
+            },
+            "ton_value": "0.0000012236225281",
+            "usd_change": {
+              "d7": -8.12927755935786,
+              "h1": 0,
+              "h24": 0,
+              "h6": 0,
+              "m15": 0
+            },
+            "usd_value": "0.0000017294868383397562"
+          },
+          "sell_tax": 0,
+          "tags": [
+            "migrated_to_dex",
+            "dedust_v3_memepad"
+          ],
+          "total_supply": "1000000000000000000",
+          "traders": {
+            "buy": {
+              "d7": 3,
+              "h1": 0,
+              "h24": 0,
+              "h6": 0,
+              "m15": 0
+            },
+            "sell": {
+              "d7": 11,
+              "h1": 0,
+              "h24": 0,
+              "h6": 0,
+              "m15": 0
+            },
+            "total": {
+              "d7": 13,
+              "h1": 0,
+              "h24": 0,
+              "h6": 0,
+              "m15": 0
+            }
+          },
+          "transactions": {
+            "buy": {
+              "d7": 10,
+              "h1": 0,
+              "h24": 0,
+              "h6": 0,
+              "m15": 0
+            },
+            "sell": {
+              "d7": 11,
+              "h1": 0,
+              "h24": 0,
+              "h6": 0,
+              "m15": 0
+            }
+          },
+          "verification_level": 3,
+          "volume": {
+            "buy_periods": {
+              "d7": "49.8588899127853134239190008916706",
+              "h1": "0",
+              "h24": "0",
+              "h6": "0",
+              "m15": "0"
+            },
+            "change": {
+              "d7": -60.16357485126995,
+              "h1": 0,
+              "h24": -100,
+              "h6": 0,
+              "m15": 0
+            },
+            "periods": {
+              "d7": "157.1209795986901139691570279063085",
+              "h1": "0",
+              "h24": "0",
+              "h6": "0",
+              "m15": "0"
+            },
+            "sell_periods": {
+              "d7": "107.2620896859048005452380270146379",
+              "h1": "0",
+              "h24": "0",
+              "h6": "0",
+              "m15": "0"
+            }
+          }
+        }
+      ],
+      "total_count": 1
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"getAddressInformation\\\",\\\"params\\\":{\\\"address\\\":\\\"0:f4dba90ebf88fafb9e8eeb2f246da68565d42156487845b106ad0343ed724c96\\\"}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "raw.fullAccountState",
+        "balance": "717297572863",
+        "extra_currencies": [],
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101723927000009",
+          "hash": "MeLQfnPw0yYPsxIenQqLQHDTGn4rKapMS8HN9iiRcoY="
+        },
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215887,
+          "root_hash": "F1kdHt2A3nCie8mbYuMeRqWjdr2pdgdKF+Zld2ems+M=",
+          "file_hash": "qRX33++7Nn/d9o1MmUj85KqgmvzC0i++KwY5zNeEtCs="
+        },
+        "code": "te6cckEBAQEAIwAIQgJgReZ7YX5zSGqsRFz8rQ2+rW0xXMyPSu3j8uI60U2ksLB4Buo=",
+        "data": "te6cckECCgEAAZAAAy1bgRZ5iL/8WSztvShi7APXYbXzUEnzQAECAwKPIAHRzaVHqduQnkCm4oH929EACxYNmWhEdBxtoRUzYEYNVADu4AiT//JKuqT0Znje0RoXIQMPcj4uIGYZme3UK4hFlABkE4iWBAUANUAQvkZQUI3/GAIQcNqS72EgFTCURfEv6czoIAJDgAZsyfMCfBf7JtYmZmxd63Ulv4FsArI0rBFdGa3wtgHWmggJAEUCgAdHNpUep25CeQKbigf3b0QALFg2ZaER0HG2hFTNgRg1UAIBSAYHAE0gAdHNpUep25CeQKbigf3b0QALFg2ZaER0HG2hFTNgRg1QAACTqAQACwAAASdQCACFoAdHNpUep25CeQKbigf3b0QALFg2ZaER0HG2hFTNgRg1UAPS4QN/Df9+0rkLLAcLlWBUmig1E5vQoZqYvbHwCBY1KgCFoB6XCBv4b/v2lchZYDhcqwKk0UGonN6FDNTF7Y+AQLGpUADo5tKj1O3ITyBTcUD+7eiABYsGzLQiOg420IqZsCMGqn0u8xo=",
+        "frozen_hash": "",
+        "sync_utime": 1788799140,
+        "state": "active",
+        "suspended": false
+      },
+      "@extra": "1788799141:14:12.49"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:3a39b4a8f53b7213c814dc503fbb7a200162c1b32d088e838db422a66c08c1aa\\\",\\\"method\\\":\\\"get_wallet_address\\\",\\\"stack\\\":[[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQ4Aem3Uh1/EfX3PR3WXkjbTQrLqEKskPCLYg1aBofa5JktBGRy+5\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 2881,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4Aelwgb+G/79pXIWWA4XKsCpNFBqJzehQzUxe2PgECxqVBMCVNu",
+              "object": {
+                "data": {
+                  "b64": "gB6XCBv4b/v2lchZYDhcqwKk0UGonN6FDNTF7Y+AQLGpUA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215888,
+          "root_hash": "Co0vpF1jKXCkKgawODxuqGtFDqkfjWEQemq4CHyyXyE=",
+          "file_hash": "RvdjVoNCvF+yfDTLw9u4HU2JqJL4PiuDH+/YUit+hs0="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "96154375000001",
+          "hash": "rIr+nJ4QdIm4nwn8BZ9uh0/Vi4w00wj4qE3xDVhvYnI="
+        }
+      },
+      "@extra": "1788799141:7:26.684"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:f4b840dfc37fdfb4ae42cb01c2e55815268a0d44e6f42866a62f6c7c02058d4a\\\",\\\"method\\\":\\\"get_wallet_data\\\",\\\"stack\\\":[]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 667,
+        "stack": [
+          [
+            "num",
+            "0x7aec36be6a093e6"
+          ],
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4Aem3Uh1/EfX3PR3WXkjbTQrLqEKskPCLYg1aBofa5JktBGRy+5",
+              "object": {
+                "data": {
+                  "b64": "gB6bdSHX8R9fc9HdZeSNtNCsuoQqyQ8ItiDVoGh9rkmS0A==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ],
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AHRzaVHqduQnkCm4oH929EACxYNmWhEdBxtoRUzYEYNVCsVyZp",
+              "object": {
+                "data": {
+                  "b64": "gAdHNpUep25CeQKbigf3b0QALFg2ZaER0HG2hFTNgRg1UA==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ],
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAIwAIQgKJHlIo5DAK4/8iWDFju9UOPh6M0jBMDVcWT1MY+doSZpf6uyk=",
+              "object": {
+                "data": {
+                  "b64": "AokeUijkMArj/yJYMWO71Q4+HozSMEwNVxZPUxj52hJm",
+                  "len": 264
+                },
+                "refs": [],
+                "special": true
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215889,
+          "root_hash": "ctFHsFIEyvgAWCqdOZXar3rPYSZSljMBk9qmqeWeIjI=",
+          "file_hash": "lpJEhGomkl+fe8bbasTVTEsEXZVdjrAH+kcW4GVaX7k="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101723927000007",
+          "hash": "rqqKHabRfp/Qmz9rUocJbB1j7vL7474VSLEpXs4GJ9w="
+        }
+      },
+      "@extra": "1788799141:9:25.377"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"runGetMethod\\\",\\\"params\\\":{\\\"address\\\":\\\"0:3a39b4a8f53b7213c814dc503fbb7a200162c1b32d088e838db422a66c08c1aa\\\",\\\"method\\\":\\\"get_wallet_address\\\",\\\"stack\\\":[[\\\"tvm.Slice\\\",\\\"te6cckEBAQEAJAAAQ4AAICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIDD5x+96\\\"]]}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "smc.runResult",
+        "gas_used": 2881,
+        "stack": [
+          [
+            "cell",
+            {
+              "bytes": "te6cckEBAQEAJAAAQ4AAIurLB/jm993rll/bnvRY0ZpG7OXGnIfxn3VMZT1ZC9ACfyiq",
+              "object": {
+                "data": {
+                  "b64": "gAAi6ssH+Ob33euWX9ue9FjRmkbs5cach/GfdUxlPVkL0A==",
+                  "len": 267
+                },
+                "refs": [],
+                "special": false
+              }
+            }
+          ]
+        ],
+        "exit_code": 0,
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91215889,
+          "root_hash": "ctFHsFIEyvgAWCqdOZXar3rPYSZSljMBk9qmqeWeIjI=",
+          "file_hash": "lpJEhGomkl+fe8bbasTVTEsEXZVdjrAH+kcW4GVaX7k="
+        },
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "96154375000001",
+          "hash": "rIr+nJ4QdIm4nwn8BZ9uh0/Vi4w00wj4qE3xDVhvYnI="
+        }
+      },
+      "@extra": "1788799141:6:28.242"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"getAddressInformation\\\",\\\"params\\\":{\\\"address\\\":\\\"0:88dac67cceadb9cae6faac7118f05c0fa95df36c2a92e686ac39d96310d0a387\\\"}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "raw.fullAccountState",
+        "balance": "2195959844307",
+        "extra_currencies": [],
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101952594000023",
+          "hash": "wgtEy1dF3hF5n32qKrABrdGCjKIIxhIvAfj0Im9WCTs="
+        },
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91216792,
+          "root_hash": "o7WLBfkzRMDoJQkmp6Q9o5mcDBZAT545uZo7HqQ29u8=",
+          "file_hash": "6NAfMeF/ChFNbVtOrDjv1zGYbgSYMR1q+EzrbMXWOgA="
+        },
+        "code": "te6cckEBAQEAIwAIQgKPRS16Tf10BmtoI2UXclntBXNENb52tf1L1divK3w9aCBrv3Y=",
+        "data": "te6cckEBAQEASwAAkQWu0cEYC4ADFVHF3aouj7XAZ4DzcnEHsoOVseyos+XdOa6Oltcdq7ACxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id/ok9ayE",
+        "frozen_hash": "",
+        "sync_utime": 1788799506,
+        "state": "active",
+        "suspended": false
+      },
+      "@extra": "1788799507:13:16.046"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"getAddressInformation\\\",\\\"params\\\":{\\\"address\\\":\\\"0:8f201472b62b4a94d0c8b7b818125e45cbee8ed2a963599690ea54e62e534de5\\\"}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "raw.fullAccountState",
+        "balance": "974433",
+        "extra_currencies": [],
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101949269000011",
+          "hash": "/e0msbKppG0+WEufsPZPdrnAbHl9r4+sKDEMMcQrV/c="
+        },
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91216793,
+          "root_hash": "Uo4hxr5qle5QobHt5WIuUKZZQSrbIQPjAWpAzY/cbSg=",
+          "file_hash": "1zAfHFHuxtiu3Ijv9MsPVPFxtsu2dLqDVW0uCvnGirU="
+        },
+        "code": "te6cckEBAQEAIwAIQgLu/OXOPR5VWlAQowk0jJZd+vcuvfMjO09pH6PTe9tWBev4Ooo=",
+        "data": "te6cckEBAQEATgAAl4AR+zctLVeuyAEeu/S5+szBtmXQ4WQbp8xkTclg90r4MfYe4JKvtvHqEQADv7WKS2z6vhjl3oGE2LRWkNLTJMSwcc2BfHFAhhlgI+DkivrM",
+        "frozen_hash": "",
+        "sync_utime": 1788799506,
+        "state": "active",
+        "suspended": false
+      },
+      "@extra": "1788799507:8:17.197"
+    },
+    "[\"https://toncenter.com/api/v2/jsonRPC\",\"POST\",\"{\\\"jsonrpc\\\":\\\"2.0\\\",\\\"id\\\":\\\"agent\\\",\\\"method\\\":\\\"getAddressInformation\\\",\\\"params\\\":{\\\"address\\\":\\\"0:f4b840dfc37fdfb4ae42cb01c2e55815268a0d44e6f42866a62f6c7c02058d4a\\\"}}\"]": {
+      "ok": true,
+      "result": {
+        "@type": "raw.fullAccountState",
+        "balance": "974433",
+        "extra_currencies": [],
+        "last_transaction_id": {
+          "@type": "internal.transactionId",
+          "lt": "101723927000007",
+          "hash": "rqqKHabRfp/Qmz9rUocJbB1j7vL7474VSLEpXs4GJ9w="
+        },
+        "block_id": {
+          "@type": "ton.blockIdExt",
+          "workchain": -1,
+          "shard": "-9223372036854775808",
+          "seqno": 91216793,
+          "root_hash": "Uo4hxr5qle5QobHt5WIuUKZZQSrbIQPjAWpAzY/cbSg=",
+          "file_hash": "1zAfHFHuxtiu3Ijv9MsPVPFxtsu2dLqDVW0uCvnGirU="
+        },
+        "code": "te6cckEBAQEAIwAIQgKJHlIo5DAK4/8iWDFju9UOPh6M0jBMDVcWT1MY+doSZpf6uyk=",
+        "data": "te6cckEBAQEATgAAl4B67Da+agk+aAHpt1IdfxH19z0d1l5I200Ky6hCrJDwi2INWgaH2uSZLQAOjm0qPU7chPIFNxQP7t6IAFiwbMtCI6DjbQipmwIwaqAM1abh",
+        "frozen_hash": "",
+        "sync_utime": 1788799506,
+        "state": "active",
+        "suspended": false
+      },
+      "@extra": "1788799507:3:18.21"
+    }
+  }
+}

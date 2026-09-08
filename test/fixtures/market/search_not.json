@@ -1,0 +1,405 @@
+{
+"schemaVersion": "1.0.0",
+"pairs": [
+{
+"chainId": "ton",
+"dexId": "stonfi",
+"url": "https://dexscreener.com/ton/eqcay8ifl2s6lrbmbjey35liumxpc8jfitwg4tl7lbgrsor2",
+"pairAddress": "EQCaY8Ifl2S6lRBMBJeY35LIuMXPc8JfItWG4tl7lBGrSoR2",
+"baseToken": {
+"address": "EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT",
+"name": "Notcoin",
+"symbol": "NOT"
+},
+"quoteToken": {
+"address": "EQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM9c",
+"name": "Gram",
+"symbol": "GRAM"
+},
+"priceNative": "0.0002633",
+"priceUsd": "0.0004502",
+"txns": {
+"m5": {
+"buys": 0,
+"sells": 0
+},
+"h1": {
+"buys": 3,
+"sells": 0
+},
+"h6": {
+"buys": 9,
+"sells": 2
+},
+"h24": {
+"buys": 27,
+"sells": 49
+}
+},
+"volume": {
+"h24": 8299.85,
+"h6": 853.11,
+"h1": 46.52,
+"m5": 0
+},
+"priceChange": {
+"h1": -0.32,
+"h6": -3.3,
+"h24": -9.04
+},
+"liquidity": {
+"usd": 201211.57,
+"base": 224565640,
+"quote": 58538
+},
+"fdv": 46129148,
+"marketCap": 44767932,
+"pairCreatedAt": 1715808468000,
+"info": {
+"imageUrl": "https://cdn.dexscreener.com/cms/images/f5bd23d4307ebf5515fb9ce1b8d469780998eda9419894bb5f36a6225f232b24?width=800&height=800&quality=95&format=auto",
+"header": "https://cdn.dexscreener.com/cms/images/7a319b2185939df2a19c212027bad29a11d720f88ae9eb2ba5b062be8d16b16e?width=1500&height=500&quality=95&format=auto",
+"openGraph": "https://cdn.dexscreener.com/token-images/og/ton/eqavlwfdxgf2lxm67y4yzc17wykd9a0guwpkms1gosm__not?timestamp=1781573400000",
+"websites": [
+{
+"url": "https://notco.in",
+"label": "Website"
+}
+],
+"socials": [
+{
+"url": "https://twitter.com/thenotcoin",
+"type": "twitter"
+},
+{
+"url": "https://t.me/notcoin",
+"type": "telegram"
+}
+]
+}
+},
+{
+"chainId": "ton",
+"dexId": "stonfi",
+"url": "https://dexscreener.com/ton/eqd9bmgqq2_nzk-9lfxthcolyc3ybhwk5wqev_fymu2rirve",
+"pairAddress": "EQD9BmgQQ2_nzk-9LfxthcoLYC3yBHWK5WqEv_FyMU2riRvE",
+"baseToken": {
+"address": "EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT",
+"name": "Notcoin",
+"symbol": "NOT"
+},
+"quoteToken": {
+"address": "EQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAM9c",
+"name": "Gram",
+"symbol": "GRAM"
+},
+"priceNative": "0.0002632",
+"priceUsd": "0.0004509",
+"txns": {
+"m5": {
+"buys": 0,
+"sells": 0
+},
+"h1": {
+"buys": 0,
+"sells": 2
+},
+"h6": {
+"buys": 28,
+"sells": 14
+},
+"h24": {
+"buys": 112,
+"sells": 148
+}
+},
+"volume": {
+"h24": 15557.8,
+"h6": 2942.92,
+"h1": 35.08,
+"m5": 0
+},
+"priceChange": {
+"h1": -0.69,
+"h6": -1.79,
+"h24": -6.93
+},
+"liquidity": {
+"usd": 70285.63,
+"base": 78051267,
+"quote": 20484
+},
+"fdv": 46198892,
+"marketCap": 44835617,
+"pairCreatedAt": 1729270929000,
+"info": {
+"imageUrl": "https://cdn.dexscreener.com/cms/images/f5bd23d4307ebf5515fb9ce1b8d469780998eda9419894bb5f36a6225f232b24?width=800&height=800&quality=95&format=auto",
+"header": "https://cdn.dexscreener.com/cms/images/7a319b2185939df2a19c212027bad29a11d720f88ae9eb2ba5b062be8d16b16e?width=1500&height=500&quality=95&format=auto",
+"openGraph": "https://cdn.dexscreener.com/token-images/og/ton/eqavlwfdxgf2lxm67y4yzc17wykd9a0guwpkms1gosm__not?timestamp=1781573400000",
+"websites": [
+{
+"url": "https://notco.in",
+"label": "Website"
+}
+],
+"socials": [
+{
+"url": "https://twitter.com/thenotcoin",
+"type": "twitter"
+},
+{
+"url": "https://t.me/notcoin",
+"type": "telegram"
+}
+]
+}
+},
+{
+"chainId": "ton",
+"dexId": "stonfi",
+"url": "https://dexscreener.com/ton/eqark5mkz_mk51u5azjk3hxhlg1smqg2z-4pb7zapi_xwmrn",
+"pairAddress": "EQARK5MKz_MK51U5AZjK3hxhLg1SmQG2Z-4Pb7Zapi_xwmrN",
+"baseToken": {
+"address": "EQAvlWFDxGF2lXm67y4yzC17wYKD9A0guwPkMs1gOsM__NOT",
+"name": "Notcoin",
+"symbol": "NOT"
+},
+"quoteToken": {
+"address": "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
+"name": "Tether USD",
+"symbol": "USD\u20ae"
+},
+"priceNative": "0.0004478",
+"priceUsd": "0.0004491",
+"txns": {
+"m5": {
+"buys": 0,
+"sells": 0
+},
+"h1": {
+"buys": 3,
+"sells": 2
+},
+"h6": {
+"buys": 5,
+"sells": 12
+},
+"h24": {
+"buys": 23,
+"sells": 43
+}
+},
+"volume": {
+"h24": 2872.25,
+"h6": 686.77,
+"h1": 305.45,
+"m5": 0
+},
+"priceChange": {
+"h1": -0.41,
+"h6": -3.68,
+"h24": -8.63
+},
+"liquidity": {
+"usd": 37831.42,
+"base": 42324649,
+"quote": 18765
+},
+"fdv": 46017724,
+"marketCap": 44659796,
+"pairCreatedAt": 1715814844000,
+"info": {
+"imageUrl": "https://cdn.dexscreener.com/cms/images/f5bd23d4307ebf5515fb9ce1b8d469780998eda9419894bb5f36a6225f232b24?width=800&height=800&quality=95&format=auto",
+"header": "https://cdn.dexscreener.com/cms/images/7a319b2185939df2a19c212027bad29a11d720f88ae9eb2ba5b062be8d16b16e?width=1500&height=500&quality=95&format=auto",
+"openGraph": "https://cdn.dexscreener.com/token-images/og/ton/eqavlwfdxgf2lxm67y4yzc17wykd9a0guwpkms1gosm__not?timestamp=1781573400000",
+"websites": [
+{
+"url": "https://notco.in",
+"label": "Website"
+}
+],
+"socials": [
+{
+"url": "https://twitter.com/thenotcoin",
+"type": "twitter"
+},
+{
+"url": "https://t.me/notcoin",
+"type": "telegram"
+}
+]
+}
+},
+{
+"chainId": "solana",
+"dexId": "orca",
+"url": "https://dexscreener.com/solana/eiruallf6weccmnikdnf2ovuzdvbwd5vmwzvrcm9nrya",
+"pairAddress": "EiRuaLLF6weCCmniKdnF2oVUzDVBWd5vmwzvRcM9nRyA",
+"labels": [
+"wp"
+],
+"baseToken": {
+"address": "2WQmhwPShMUGdvbpQpdq6mTmNSTc9NJNTuEPT686rTD7",
+"name": "Notcoin",
+"symbol": "NOT"
+},
+"quoteToken": {
+"address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+"name": "USD Coin",
+"symbol": "USDC"
+},
+"priceNative": "0.001538",
+"priceUsd": "0.001538",
+"txns": {
+"m5": {
+"buys": 0,
+"sells": 0
+},
+"h1": {
+"buys": 0,
+"sells": 0
+},
+"h6": {
+"buys": 0,
+"sells": 0
+},
+"h24": {
+"buys": 1,
+"sells": 1
+}
+},
+"volume": {
+"h24": 3.99,
+"h6": 0,
+"h1": 0,
+"m5": 0
+},
+"priceChange": {
+"h24": -0.04
+},
+"liquidity": {
+"usd": 156599898.61,
+"base": 101800512748,
+"quote": 19.5412
+},
+"fdv": 157609689,
+"marketCap": 157609689,
+"pairCreatedAt": 1760024463000
+},
+{
+"chainId": "solana",
+"dexId": "meteora",
+"url": "https://dexscreener.com/solana/bedwfevvk9dksfgbbgf41hyjpntrjvirxfpjdm9kmcmx",
+"pairAddress": "BEDwfEVVk9dkSFGbBGF41HyJpNTRJViRXfPjdm9Kmcmx",
+"labels": [
+"DLMM"
+],
+"baseToken": {
+"address": "5y21YHhQyoSLhht8WNXvJEYAA2D96WGXeg48mKQyG6xo",
+"name": "Notcoin",
+"symbol": "NOT"
+},
+"quoteToken": {
+"address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+"name": "USD Coin",
+"symbol": "USDC"
+},
+"priceNative": "0.001954",
+"priceUsd": "0.001954",
+"txns": {
+"m5": {
+"buys": 0,
+"sells": 0
+},
+"h1": {
+"buys": 1,
+"sells": 1
+},
+"h6": {
+"buys": 1,
+"sells": 1
+},
+"h24": {
+"buys": 1,
+"sells": 1
+}
+},
+"volume": {
+"h24": 3.99,
+"h6": 3.99,
+"h1": 3.99,
+"m5": 0
+},
+"priceChange": {
+"h1": -0.02,
+"h6": -0.02,
+"h24": -0.02
+},
+"liquidity": {
+"usd": 199281032.36,
+"base": 101945377890,
+"quote": 2.1637
+},
+"fdv": 200281057,
+"marketCap": 200281057,
+"pairCreatedAt": 1755421094000
+},
+{
+"chainId": "solana",
+"dexId": "meteora",
+"url": "https://dexscreener.com/solana/6ymnwwvs6kp6l3e6nnyjdxsz3riqpzy7p7b52as9n5yb",
+"pairAddress": "6YmnWwvS6kp6L3E6nnyJdxSz3riqPzY7p7B52As9n5YB",
+"labels": [
+"DLMM"
+],
+"baseToken": {
+"address": "DvAZ1JcJ3u1UQYrbVU1sLEVyk2Hmj9z3wdyjrBZ9mExd",
+"name": "Notcoin",
+"symbol": "NOT"
+},
+"quoteToken": {
+"address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+"name": "USD Coin",
+"symbol": "USDC"
+},
+"priceNative": "0.002544",
+"priceUsd": "0.002544",
+"txns": {
+"m5": {
+"buys": 0,
+"sells": 0
+},
+"h1": {
+"buys": 1,
+"sells": 1
+},
+"h6": {
+"buys": 1,
+"sells": 1
+},
+"h24": {
+"buys": 1,
+"sells": 1
+}
+},
+"volume": {
+"h24": 3.99,
+"h6": 3.99,
+"h1": 3.99,
+"m5": 0
+},
+"priceChange": {
+"h1": -0.02,
+"h6": -0.02,
+"h24": -0.02
+},
+"liquidity": {
+"usd": 259680404.88,
+"base": 102063904221,
+"quote": 2.2084
+},
+"fdv": 260680445,
+"marketCap": 260680445,
+"pairCreatedAt": 1742123024000
+}
+]
+}

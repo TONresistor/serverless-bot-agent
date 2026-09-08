@@ -1,0 +1,93 @@
+{
+  "asset_list": [
+    {
+      "contract_address": "EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs",
+      "kind": "Jetton",
+      "meta": {
+        "symbol": "USD₮",
+        "display_name": "Tether USD",
+        "image_url": "https://asset.ston.fi/img/EQCxE6mUtQJKFnGfaROTKOt1lZbDiiX1kCixRv7Nw2Id_sDs/1a87edfee9a28b05578853952e5effb8cc30af1e0fb90043aa2ce19dce490849",
+        "decimals": 6
+      },
+      "pair_priority": 100,
+      "popularity_index": 13.259120713853314,
+      "tags": [
+        "high_liquidity",
+        "asset:popular",
+        "asset:essential",
+        "asset:default_symbol",
+        "default_symbol",
+        "asset:liquidity:very_high"
+      ],
+      "dex_price_usd": "0.99985500000000004927613872496294789016246795654296875"
+    },
+    {
+      "contract_address": "EQCAo-2Zcq7YyvY4afVhfA83H3TaQdmdYNAmtzne_pS7sPkW",
+      "kind": "Jetton",
+      "meta": {
+        "symbol": "USDT",
+        "display_name": "Tether USD",
+        "image_url": "https://asset.ston.fi/img/EQCAo-2Zcq7YyvY4afVhfA83H3TaQdmdYNAmtzne_pS7sPkW/c034b809565259e64252af9bb38700f8fc7934e484d5b390f37b56d4e612963b",
+        "decimals": 9
+      },
+      "popularity_index": 0.5759401026599804,
+      "tags": [
+        "blacklisted",
+        "asset:liquidity:no",
+        "no_liquidity",
+        "asset:blacklisted"
+      ]
+    },
+    {
+      "contract_address": "EQDBvsZsE79WKuNkZHQDqG1fBOQwzJnLu4vwXnsS9sg0qmIx",
+      "kind": "Jetton",
+      "meta": {
+        "symbol": "USDT",
+        "display_name": "TetherUS",
+        "image_url": "https://asset.ston.fi/img/EQDBvsZsE79WKuNkZHQDqG1fBOQwzJnLu4vwXnsS9sg0qmIx/3751f45c3d3f634c42a4e7255b64cef5ea0775a7a50fd732549ca46e583b0b35",
+        "decimals": 9
+      },
+      "popularity_index": 0.5605327904892073,
+      "tags": [
+        "asset:blacklisted",
+        "no_liquidity",
+        "blacklisted",
+        "asset:liquidity:no"
+      ]
+    },
+    {
+      "contract_address": "EQA4BVtMwRumhfLba0JAQOV-XoO1brsDeB1P9Jtcuj4J4EHU",
+      "kind": "Jetton",
+      "meta": {
+        "symbol": "USDT",
+        "display_name": "USDT",
+        "image_url": "https://asset.ston.fi/img/EQA4BVtMwRumhfLba0JAQOV-XoO1brsDeB1P9Jtcuj4J4EHU/07cc72d064d8fbb44e0f6888628df0a5d67d88399836850aa1aff9382934080c",
+        "decimals": 9
+      },
+      "popularity_index": 0.44660398321059835,
+      "tags": [
+        "blacklisted",
+        "no_liquidity",
+        "asset:blacklisted",
+        "asset:liquidity:no"
+      ]
+    },
+    {
+      "contract_address": "EQCC51VHkQ26CWICKNxE55jp6bQEKToWXFeda39Dq3arNE_1",
+      "kind": "Jetton",
+      "meta": {
+        "symbol": "USDT",
+        "display_name": "Tether USD",
+        "image_url": "https://asset.ston.fi/img/EQCC51VHkQ26CWICKNxE55jp6bQEKToWXFeda39Dq3arNE_1/fb47b988800126328060e47fdaabe9d78a184e95cd0fe2ab6ff9899373266e46",
+        "decimals": 9
+      },
+      "popularity_index": 0.41360117328957485,
+      "tags": [
+        "asset:blacklisted",
+        "no_liquidity",
+        "asset:liquidity:no",
+        "blacklisted"
+      ]
+    }
+  ]
+}

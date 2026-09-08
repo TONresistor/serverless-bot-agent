@@ -1,0 +1,50 @@
+{
+  "name": "telegram-serverless-personal-agent",
+  "private": true,
+  "devDependencies": {
+    "@dedust/kit": "0.0.4",
+    "@dedust/sdk": "0.8.7",
+    "@eslint/js": "9.39.5",
+    "@noble/curves": "1.9.7",
+    "@noble/hashes": "1.8.0",
+    "@ston-fi/sdk": "2.7.0",
+    "@tgcloud/cli": "^0.1.2",
+    "@ton/core": "0.63.1",
+    "@ton/crypto": "3.3.0",
+    "@ton/sandbox": "0.44.0",
+    "@ton/ton": "16.3.0",
+    "@types/node": "22.20.1",
+    "@types/sql.js": "1.4.11",
+    "acorn": "8.18.0",
+    "buffer": "6.0.3",
+    "esbuild": "0.28.2",
+    "eslint": "9.39.5",
+    "globals": "17.12.0",
+    "marked": "18.0.11",
+    "prettier": "3.9.6",
+    "sql.js": "1.14.2",
+    "typescript": "7.0.2",
+    "whatwg-url": "14.2.0"
+  },
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "tsc --noEmit && eslint src scripts test handlers schema.js eslint.config.js",
+    "test": "node --test test/*.test.mjs test/tools/*.test.mjs",
+    "deploy": "node scripts/deploy.mjs",
+    "setup": "node scripts/setup.mjs",
+    "probe": "node scripts/probe.mjs",
+    "cloud:status": "node scripts/status.mjs",
+    "status": "node scripts/tgcloud.mjs status",
+    "run": "node scripts/tgcloud.mjs run",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "webhook": "node scripts/tgcloud.mjs webhook"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "license": "MIT",
+  "description": "Personal JavaScript AI agent for Telegram Serverless with persistent memory, tools and a TON wallet."
+}

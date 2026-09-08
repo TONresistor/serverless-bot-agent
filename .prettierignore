@@ -1,0 +1,7 @@
+node_modules/
+.tgcloud/
+.local/
+lib/
+coverage/
+package-lock.json
+test/fixtures/
