@@ -778,4 +778,4 @@ THE SOFTWARE.
 
 Public TON, STON.fi and DeDust account snapshots, bytecode and transaction vectors under `test/fixtures/` are reference evidence for offline compatibility tests. They are not wallet secrets or claims that third-party contracts are project-authored MIT code. The DeDust ABI follows its Apache-2.0 SDKs and the TON ABI registry; the test harness uses `@ton/sandbox` under MIT.
 
-The Telegram SDK is supplied by the Serverless platform and is not redistributed here. Development tools are installed from the pinned npm lockfile with their own licenses. The MyDuckAI standalone agent was a behavior reference; it is not a runtime or build dependency.
+The Telegram SDK is supplied by the Serverless platform and is not redistributed here. Development tools are installed from the pinned npm lockfile with their own licenses.

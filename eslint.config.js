@@ -5,7 +5,7 @@ export default [
   { ignores: ['node_modules/**', 'lib/**', '.local/**', '.tgcloud/**', 'docs/**'] },
   js.configs.recommended,
   {
-    files: ['scripts/**/*.mjs', 'test/**/*.mjs', 'eslint.config.js'],
+    files: ['*.mjs', 'test/**/*.mjs', 'eslint.config.js'],
     languageOptions: { globals: globals.node },
   },
   {
@@ -25,7 +25,7 @@ export default [
     },
   },
   {
-    files: ['src/**/*.js', 'scripts/**/*.mjs', 'test/**/*.mjs', 'handlers/**/*.js', '*.js'],
+    files: ['src/**/*.js', '*.mjs', 'test/**/*.mjs', 'handlers/**/*.js', '*.js'],
     rules: { 'no-unused-vars': ['error', { argsIgnorePattern: '^_', caughtErrors: 'none' }] },
   },
 ];

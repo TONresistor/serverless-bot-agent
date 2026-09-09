@@ -1,5 +1,5 @@
 {
-  "name": "telegram-serverless-personal-agent",
+  "name": "serverless-bot-agent",
   "private": true,
   "devDependencies": {
     "@dedust/kit": "0.0.4",
@@ -29,18 +29,14 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "build": "node scripts/build.mjs",
-    "check": "tsc --noEmit && eslint src scripts test handlers schema.js eslint.config.js",
+    "build": "node build.mjs",
+    "check": "tsc --noEmit && eslint src test handlers schema.js eslint.config.js agent.mjs build.mjs",
     "test": "node --test test/*.test.mjs test/tools/*.test.mjs",
-    "deploy": "node scripts/deploy.mjs",
-    "setup": "node scripts/setup.mjs",
-    "probe": "node scripts/probe.mjs",
-    "cloud:status": "node scripts/status.mjs",
-    "status": "node scripts/tgcloud.mjs status",
-    "run": "node scripts/tgcloud.mjs run",
+    "deploy": "node agent.mjs deploy",
+    "configure": "node agent.mjs configure",
+    "status": "node agent.mjs status",
     "format": "prettier --write .",
-    "format:check": "prettier --check .",
-    "webhook": "node scripts/tgcloud.mjs webhook"
+    "format:check": "prettier --check ."
   },
   "engines": {
     "node": ">=22.0.0"

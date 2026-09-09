@@ -1,34 +1,36 @@
-# Operations
+# Deployment
 
-## Repository status
+Set up [configuration](configuration.md), then run:
 
-- `scripts/` and `deploy/` are local-only and excluded from Git.
-- `package.json`, CI and some tests still reference excluded or deleted files.
-- A fresh clone does not currently contain the complete build/setup workflow.
+```sh
+npm run deploy
+npm run status
+```
 
-## Local deployment
+## First deployment
 
-With the retained local scripts:
+- Authenticate and prepare or reuse a private wallet backup.
+- Build `lib/runtime.js` from `src/` and synchronize the CLI snapshot.
+- Publish the schema, apply safe migrations and publish the code.
+- Initialize the agent's settings and workspace.
 
-1. Configure `.env.local`; existing environment variables take priority.
-2. Build with `npm run build`.
-3. Deploy with `npm run deploy -- --skip-build`.
-4. Check the selected bot with `npm run status` and `npm run webhook`.
+## Updates
 
-Deployment authenticates, publishes the schema, applies safe migrations, then publishes code.
-Back up the previous modules first; keep the existing owner, wallet and credentials.
+- `npm run deploy` updates code and schema; existing settings are preserved.
+- `npm run configure` applies configuration changes separately.
+- Configuration requires the matching `.local/wallet-mainnet.json` backup.
+- The CLI refuses to replace an existing owner, network or wallet.
+- If initialization is interrupted after creating the agent, rerun `npm run configure`.
 
-## Scheduled execution
+## Development
 
-- The optional external clock invokes due tasks on Telegram.
-- It runs no inference or wallet signing.
-- Its Linux service files remain local under `deploy/`.
-- Normal conversations work without that clock.
+```sh
+npm run check
+npm test
+npm run build
+```
 
-## Diagnostics
+## Scheduled tasks
 
-- `turn_finished`: actual outcome and reason.
-- `diagnostic`: error category, phase and sanitized code locations.
-- Histories and operation archives are retained; no global purge is configured.
-
-For wallet settlement and recovery, see [TON tools](ton-tools.md).
+Automatic heartbeat and scheduled tasks need an external clock calling the existing task management exports.
+That clock is not installed by this deployment command. Normal conversations do not require it.

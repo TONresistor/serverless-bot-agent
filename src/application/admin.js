@@ -46,7 +46,8 @@ export function createAdmin({ configuration, secrets, telegram, getChain, checkS
       const me = await telegram.getMe();
       await secrets.setSecret('openrouter', input.openrouterKey);
       await secrets.setSecret('wallet_key', input.walletKey);
-      await secrets.setSecret('toncenter', input.toncenterKey || '');
+      if (Object.hasOwn(input, 'toncenterKey') || !existing)
+        await secrets.setSecret('toncenter', input.toncenterKey || '');
       await configuration.setConfig({
         ownerId: input.ownerId,
         botId: me.id,

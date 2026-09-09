@@ -1,0 +1,17 @@
+{
+  "ownerId": 0,
+  "model": "google/gemini-3.8-flash",
+  "network": "mainnet",
+  "loop": {
+    "defaults": { "maxModelCalls": 12, "maxToolCalls": 32 },
+    "overrides": {}
+  },
+  "access": {
+    "version": 1,
+    "dm": { "mode": "off" },
+    "group": { "mode": "off", "groups": [] },
+    "trusted": [],
+    "rate": { "per_user_hour": 10 },
+    "tools": {}
+  }
+}

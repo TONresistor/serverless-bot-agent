@@ -30,4 +30,5 @@ The loop stays independent of individual tools and providers.
 - [Features](features.md) — owner controls and permissions.
 - [Telegram](telegram-tools.md), [TON](ton-tools.md), [web](web-tools.md) — tool behavior.
 - [Serverless](tgcloud-sdk.md) — runtime constraints.
-- [Operations](operations.md) — local tooling and deployment.
+- [Configuration](configuration.md) — settings and keys.
+- [Deployment](operations.md) — installation and updates.

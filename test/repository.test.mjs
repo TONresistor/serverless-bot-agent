@@ -16,12 +16,7 @@ async function markdown(directory) {
 
 test('published documentation resolves local links without sibling repositories', async () => {
   const root = resolve('.');
-  for (const file of [
-    resolve('README.md'),
-    resolve('CONTRIBUTING.md'),
-    resolve('SECURITY.md'),
-    ...(await markdown('docs')),
-  ]) {
+  for (const file of [resolve('README.md'), ...(await markdown('docs'))]) {
     const text = await readFile(file, 'utf8');
     for (const match of text.matchAll(/\]\(([^)#]+)(?:#[^)]*)?\)/g)) {
       if (/^[a-z]+:/i.test(match[1])) continue;

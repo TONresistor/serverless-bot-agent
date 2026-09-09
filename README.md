@@ -1,23 +1,33 @@
-# tele-serverless-agent
+# serverless-bot-agent
 
-A JavaScript AI agent running on [Telegram Serverless](https://core.telegram.org/bots/serverless), powered by OpenRouter.
+A JavaScript AI agent on [Telegram Serverless](https://core.telegram.org/bots/serverless), powered by OpenRouter.
 
 - Telegram chats, groups and Business tools.
-- Persistent memory and workspace.
-- Web search and page reading with Tavily.
-- TON mainnet wallet, jettons and NFTs.
-- STON.fi and DeDust swaps, plus Uranus launchpad tools.
+- Persistent memory, workspace and Tavily web search.
+- TON mainnet wallet, jettons, NFTs, STON.fi, DeDust and Uranus tools.
 
 Wallet transactions require owner confirmation.
 
-## Configuration
+## Configure and deploy
 
-Requires Node.js 22, Telegram Serverless access and an OpenRouter API key.
-Use [.env.example](.env.example) as a template for your private `.env.local`.
-TON Center and Tavily keys are optional.
+Requires Node.js 22 and Telegram Serverless beta access.
 
-Build and setup scripts are currently excluded from this repository.
+```sh
+npm ci
+cp .env.example .env
+```
 
-## License
+1. Fill `TGCLOUD_TOKEN` and `OPENROUTER_API_KEY` in `.env`.
+2. Set your Telegram `ownerId` in [agent.config.json](agent.config.json).
+3. Run `npm run deploy`.
 
-[MIT](LICENSE). See [third-party notices](THIRD_PARTY_NOTICES.md).
+The first deployment builds the bot, applies the schema and initializes its wallet and settings.
+Keep `.env` and `.local/wallet-mainnet.json` private; back up the wallet file.
+
+- `npm run deploy` updates code on an existing bot without resetting its settings.
+- `npm run configure` applies edits to the config and keys.
+- `npm run status` checks the configured bot and webhook.
+
+See [configuration](docs/configuration.md) for model, tools and group access.
+
+[MIT](LICENSE) · [Third-party notices](THIRD_PARTY_NOTICES.md)

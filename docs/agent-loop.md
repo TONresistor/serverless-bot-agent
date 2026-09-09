@@ -20,8 +20,8 @@ Other capabilities use `tool_search` → `tool_call`; search includes complete i
 | Context / output   | 32,768 / 2,048 tokens          |
 | Parallel reads     | 1                              |
 
-`getAgentSettings` and `updateAgentSettings` manage per-surface overrides.
-Updates require the current revision and apply to the next turn.
+Edit `loop` in `agent.config.json` and run `npm run configure`.
+Changes apply to the next turn.
 Model profiles may lower the token limits.
 
 ## Recovery and stopping
